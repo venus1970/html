@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS input</title>
+  </head>
+  <body>
+    <h1 style="background-color: deeppink">JS input</h1>
+    <hr />
+    <script>
+      console.log("********** JS Input **********");
+
+      //Ex-1
+      var firstName = prompt("Enter first name");
+      console.log(firstName);
+
+      //Ex-2
+      var fName = prompt("Enter first name");
+      var lName = prompt("Enter last name");
+
+      console.log("Hola " + fName + " " + lName);
+
+      //Ex-3
+      var fName = prompt("Enter first name");
+      var lName = prompt("Enter last name");
+
+      console.log("Hola " + fName + " " + lName + " you're welcome!");
+
+      //Ex-4
+      var num1 = prompt("Enetr number 1");
+      var num2 = prompt("Enetr number 2");
+      var sum = Number(num1) + Number(num2);
+      console.log(sum);
+
+      //Ex-5
+      var productOne = prompt("Enetr price for product 1");
+      var productTwo = prompt("Enetr price for product 2");
+      var productThree = prompt("Enetr price for product 3");
+
+      var sum = Number(productOne) + Number(productTwo) + Number(productThree);
+      console.log(sum);
+
+      //Ex-6
+      var price1 = prompt("Enter price 1");
+      var price2 = prompt("Enter price 2");
+      var price3 = prompt("Enter price 3");
+      var shipping = 20;
+
+      var sum = Number(price1) + Number(price2) + Number(price3) + shipping;
+      console.log(sum);
+
+      //Ex-7
+      var x = prompt("Enetr price for product 1");
+      var y = prompt("Enetr price for product 2");
+      var z = prompt("Enetr price for product 3");
+      var discount = prompt("What is the discount for a customer?");
+
+      var sum = Number(x) + Number(y) + Number(z) - discount;
+      console.log(sum);
+
+      //Ex-8
+      var num1 = prompt("Enetr number 1");
+      var num2 = prompt("Enetr number 2");
+      var isBig = Number(num1) > Number(num2);
+      console.log(isBig);
+
+      //Ex-9
+      var num1 = prompt("Enetr number 1");
+      var num2 = prompt("Enetr number 2");
+      var num3 = prompt("Enter number 3");
+      var isBigger = Number(num1) > Number(num2) || Number(num1) > Number(num3);
+      console.log(isBigger);
+
+      //Ex-10
+      var num1 = prompt("Enetr number 1");
+      var num2 = prompt("Enetr number 2");
+      var num3 = prompt("Enter number 3");
+      var isBiggest =
+        Number(num1) > Number(num2) && Number(num1) > Number(num3);
+      console.log(isBiggest);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text decoration</title>
+    <style>
+      .main {
+        background-color: white;
+        width: 600px;
+        height: 450px;
+        text-align: center;
+       margin: auto;/* To center relative to page*/
+   
+      }
+      .main1{
+        width: 600px;
+        height: 450px;
+        background-color: pink;
+        margin-top: 20px;
+        text-align: center;
+          }
+          #capital {
+            text-transform: uppercase;
+            margin-top: 10px;
+          }
+          #capital1 {text-transform: uppercase;} #capital2 {text-transform: capitalize;} #capital3 {text-transform: capitalize;}
+          #crl {text-decoration: underline;
+        color: red;
+    }
+    #crl1 {color: black;}
+    h2:hover {color: white; background-color: blue;}
+    </style>
+  </head>
+  <body style="background-color: cadetblue">
+    <marquee id="capital" behavior="scroll" direction="right" height="50px" scroolamount="5" ></marquee><!--slow scrolling to right-->
+    this is a marquee run to right</marquee>
+
+    <marquee id="capital1" behavior="scroll" direction="left" height="50px" scrroolamount="20"><!--fast scrolling to left-->
+    this is a marquee run to left</marquee>
+     <marquee id="capital2" behavior="scroll" direction="up" height="50px">
+    this is a marquee run up</marquee>
+
+     <marquee id="capital3" behavior="scroll" direction="down" height="50px">
+    this is a marquee run down</marquee>
+    <marquee id="crl"  direction="down"         width="100" height="100"         behavior="alternate"         style="border:solid">Zila</marquee>
+    <marquee  id="crl1"       direction="down"         width="100"         height="100"         behavior="alternate"         style="border:solid">         <marquee behavior="alternate">Aharoni</marquee>     </marquee>
+    
+
+    <div class="main">
+
+      <h1>Text Text-decoration (HTML)</h1>
+      <p>
+        Lorem ipsum <strong style="color: red">dolor</strong> ipsa dolor sit
+        amet consectetur <em style="color: red">adipisicing elit.</em> Quam ipsa
+        tempora voluptate sapiente illo laboriosam in nemo error fugit quaerat.
+        Et nisi voluptatibus ratione illo earum qui, fugiat minus repellendus.
+      </p>
+      <h2><del>text</del></h2>
+      <p>
+        Lorem <del style="color: blue">ipsum dolor sit amet</del>consectetur,
+        adipisicing elit.
+        <mark
+          >Dolorem minus qui incidunt fuga repudiandae modi quisquam aperiam
+          maxime necessitatibus. Nostrum, ad veniam ex praesentium labore</mark
+        >
+        dolor temporibus quidem consequuntur expedita.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <ins style="color: red"
+          >Eos dicta non quae, saepe molestiae nobis quidem dolor voluptates
+          tenetur ratione culpa ut iste</ins style="color: green">
+        
+        aspernatur a qui <q style="color: blue">dolorum sunt excepturi.</q>
+      </p>
+    </div>
+    <div class="main1">
+    <h1>div 2</h1>
+    <p>Lorem ipsum, dolor <sup style="color: red">1</sup> sit amet consectetur adipisicing elit. Qui corporis aut minus voluptas sit <sub style="color: red">2</sub> suscipit perspiciatis, consequatur, pariatur at <small style="color: blue">dolores molestiae delectus esse earum eligendi, ipsa quasi molestias quod.</small> dolores molestiae delectus esse earum eligendi, ipsa quasi molestias quod.</p></div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!--meta charset=UTF-8 אחראי על קידוד-->
+    <!--charset=character settings-->
+    <!--UTF-8 -אומר שיש כאן קידוד של מגוון גדול של תווים מכול מיני שפות-->
+    <!--כלומר בעזרת הקידוד הזה גם אם יכתוב בסינית הוא יקדד את זה ולא יציג לי ג'יבריש-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"> This gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device)-->
+    <!--width=device-width sets the width of the viewport to the width of the device. initial-scale=1 sets the initial zoom level when the user visits the page-->
+    <!--viewport ה חלון של הדפדפן איפו מוצג התוכן הויזואלי-->
+    <!--בעזרת הפקודה הזאות אנו מתאימים רזולוציה למכשירים שונים-->
+    <title>Buttons</title>
+  </head>
+
+  <body>
+    <div>HTML is written in form of - &lt;tagname&gt;&lt;/tagname&gt;</div>
+
+    <div>
+      CSS is written in form of - style="key:value; key:value;"
+      <!--key:value =color:red-->
+    </div>
+
+    <div>
+      Javascript is written in form of - functionName(); | expression;
+      <!--באמצעות פונקציה שיש לה משימה או באמצעות קוד שמצג לנו ערך -->
+    </div>
+
+    <!--כאן אני מגדיר איזשהו קונטיינר ברמת הבלוק-->
+    <!--הוא יכול להשפיע על הכל משנמצא בפנים-->
+
+    <div>
+      <!--  לרדת שורהline break-->
+      <br />
+
+      <form>
+        <!--טופס-->
+        <!--כמו קונטיינר של טופס חדש לדוגמה טופס הרשמה שבה אנו יכולים להגדיר כול מיני אלמנטים שונים-->
+        <label>First Name</label>
+        <!--תיאור לשדה שאני מבקש למלא-->
+
+        <br />
+
+        <input type="text" />
+        <!--מקום ריק להזנת שם -->
+        <br />
+
+        <label>Number</label>
+
+        <br />
+
+        <input type="Number" />
+
+        <br />
+
+        <label>Password</label>
+
+        <br />
+
+        <input type="Password" />
+
+        <br />
+
+        <label>Button</label>
+
+        <br />
+
+        <input
+          type="button"
+          value="Input Button"
+          onclick="alert('I was clicked')"
+        />
+        <!--דרך נוספת ליצירת כפתור input type="button"-->
+
+        <br />
+
+        <input
+          style="color: red"
+          type="button"
+          value="Double button"
+          ondblclick="alert('I was doubled clicked!')"
+        />
+        <!--כאן עושים קליק כפול על הכפתור אחרת לא תקפוץ לנו חלוני התראה כאשר אנו לןחצים-->
+        <input type="Submit" value="Submit button" /><!--כפתור שליחה כמו send-->
+
+        <br />
+
+        <input type="Reset" value="Reset Input" /><!--כפתור לנקות את התוכן-->
+      </form>
+    </div>
+  </body>
+</html>

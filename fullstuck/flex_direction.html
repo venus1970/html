@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-direction</title>
+    <style>
+      /*flex-direction: row | row-reverse | column | column-reverse;*/ /*
+        הפיכת צירים "x"+"y"*/
+      .main {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        background-color: silver;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center; /*x axis convert to y axis(column)*/
+        align-items: center; /*y axis convert to x axis(column)*/
+      }
+      .main div {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        align-items: center;
+      }
+      .main1 {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        background-color: silver;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: flex-start; /*x axis convert to y axis(row)*/
+        align-items: center; /*y axis convert to x axis(row)*/
+      }
+      .main1 div {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        align-items: center;
+      }
+      .main2 {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        background-color: silver;
+        flex-direction: row; /*row by default*/
+        gap: 5px;
+        justify-content: flex-start; /*x axis convert to y axis(row)*/
+        align-items: center; /*y axis convert to x axis(row)*/
+      }
+      .main2 div {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        align-items: center;
+      }
+      .main3 {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        background-color: silver;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: flex-start; /*x axis convert to y axis(row)*/
+        align-items: center; /*y axis convert to x axis(row)*/
+      }
+      .main3 div {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-direction</h1>
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <h1>Flex-direction</h1>
+    <div class="main1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <h1>Flex-direction/column reverse</h1>
+    <div
+      class="main2"
+      style="margin-top: 10px 0px; flex-direction: column-reverse"
+    >
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <h1>Flex-direction/row reverse</h1>
+    <div
+      class="main3"
+      style="margin-top: 10px 0px; flex-direction: row-reverse"
+    >
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+  <body>
+    <script>
+      function sayHola() {
+        //Ex-1
+        var getName = prompt("name?");
+        console.log(getName);
+      }
+      function hola() {
+        //Ex-2
+        var getFirstName = prompt("name?");
+        var getLastName = prompt("last name?");
+        var hola = "Hola" + " " + getFirstName + " " + getLastName;
+        console.log(hola);
+      }
+      function welcome() {
+        //Ex-3
+        var getFirstName = prompt("name?");
+        var getLastName = prompt("last name?");
+        var Welcome =
+          "Hola " + getFirstName + " " + getLastName + " you are welcome";
+        console.log(Welcome);
+      }
+      function plus() {
+        //Ex-4
+        var num1 = prompt("number?");
+        var num2 = prompt("number 2?");
+        var total = Number(num1) + Number(num2);
+        console.log(total);
+      }
+
+      function plusPlus() {
+        //Ex-5
+        var num1 = prompt("number?");
+        var num2 = prompt("number 2?");
+        var num3 = prompt("number 3?");
+        var total = Number(num1) + Number(num2) + Number(num3);
+        console.log(total);
+      }
+    </script>
+    <button onclick="sayHola()">ex1</button>
+    <button onclick="hola()">ex2</button>
+    <button onclick="welcome()">ex3</button>
+    <button onclick="plus()">ex4</button>
+    <button onclick="plusPlus()">ex5</button>
+  </body>
+</html>

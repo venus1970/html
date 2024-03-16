@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background image</title>
+    <style>
+      #bg {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        /*url(relayive pass) if image is not in the same folder you have to add the relative path without " " */
+        /*url (absolute pass) if image in the same folder you have to add picture name " " */
+        /*It is advisable to use png 
+        images because they are transparent png רצוי להשתמש בתמונות בגלל שהן שקופות*/
+      }
+      #bg1 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: no-repeat; /*image will not repeat and will be shown in the top left corner*/
+      }
+      #bg2 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: repeat-x; /* by default image will repeat horisontally in the top*/
+      }
+      #bg3 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: repeat-x; /*image will repeat horisontally*/
+        background-position: center; /*image will repeat horisontally and will be shown in the center of the div*/
+      }
+      #bg4 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: repeat-y; /*by default image will repeat vertically left*/
+      }
+      #bg5 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: repeat-y; /*image will repeat vertically*/
+        background-position: center; /*image will repeat vertically and will be shown in the center of the div*/
+      }
+      #bg6 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: no-repeat; /*image will not repeat and will be shown in the top left corner*/
+
+        background-position: bottom right; /*image will be shown in the bottom right corner*/
+      }
+      #bg7 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: no-repeat; /*image will not repeat and will be shown in the top left corner*/
+        background-position: bottom right; /*image will be shown in the top right of the div*/
+        background-size: 150px; /*image will be shown in defined size*/
+      }
+      #bg8 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: no-repeat; /*image will not repeat and will be shown in the top left corner*/
+        background-position: top right; /*image will be shown in the top right of the div*/
+        background-size: 150px; /*image will be shown in defined size*/
+      }
+      #bg9 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: no-repeat; /*image will not repeat and will be shown in the top left corner*/
+       
+        background-size: cover; /*image will be streching in full size of the div*/
+      }
+      #bg10 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: no-repeat; /*image will not repeat and will be shown in the top left corner*/
+        background-position: top right; /*image will be shown in the top right of the div*/
+        background-size: contain; /*image will be shown in full size of image and will be cropped if it is bigger than div*/
+      } #bg11 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: no-repeat; /*image will not repeat and will be shown in the top left corner*/
+        background-position: 100px 20%; /*image will be shown in the top right of the div*/
+        background-size: 100px; /*image will be shown in full size of image and will be cropped if it is bigger than div*/
+      } #bg12 {
+        background-image: url(animal_images/camel.jpeg); /*by default image is repeat*/
+        background-repeat: no-repeat; /*image will not repeat and will be shown in the top left corner*/
+        background-position: top right; /*image will be shown in the top right of the div*/
+        background-size: 50%; /*image will be shown in full size of image and will be cropped if it is bigger than div*/
+      }#bg13 {
+        background-image: url(animal_images/camel.jpeg), url(decorbackgrounds/paper4.gif); /*2 images will be shown in the div: first image will be shown in the center and second image will be shown as background*/
+        background-repeat: no-repeat, no-repeat; /*image will not repeat and will be shown in the top left corner*/
+        background-position: center, right top; /*image will be shown inside background image*/
+        background-size: 200px, cover; 
+      }#bg14 {
+        background-image: url(places/Rio-de-Janeiro-s.jpg); 
+        background-repeat: no-repeat; 
+        background-position: 50px 100px;/*image will be in defined position in cover status*/
+        background-size: cover; 
+      }#bg15 {
+        background-image: url(places/chichen.jpg); 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        background-size: cover; box-shadow: 5px 5px 5px gray;/*image with box-shadow*/ 
+      }#bg16 {
+        background-image: url(places/asia-india-agra-taj-mahal-front-view-no-people-small.jpg); 
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover; 
+        background-attachment: scroll;/* image scroll when you scroll the page*/
+      }
+      #bg17 {
+        background-image: url(see/see.jpg); 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        background-size: cover;
+        background-attachment: fixed;/*image will be fixed in the page when you scroll the page*/
+      }#bg18 {
+        background-image: url(animal_images/dog.jpeg); 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        background-size: cover; /*center with cover status*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background image</h1>
+
+    <h2>
+      demo:
+      <span style="color: red; font-style: italic"
+        >by default image is repeat:</span
+      >
+    </h2>
+    <div
+      id="bg"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+    ></div>
+
+    <h2>
+      demo1: background-repeat: no-repeat
+      <span style="color: red; font-style: italic"
+        >image will no repeat and will be shown in the top left corner:</span
+      >
+    </h2>
+    <div
+      id="bg1"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+    ></div>
+
+    <h2>
+      demo2 background-repeat: repeat-x
+      <span style="color: red; font-style: italic"></span>
+        by defalt image will be shown horisontally in the top:</span
+      >
+    </h2>
+    <div
+      id="bg2"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+
+    <h2>
+      demo3 background-repeat; background-position: repeat-x
+      <span style="color: red; font-style: italic"
+        >image will be shown horisontally in center:</span
+      >
+    </h2>
+    <div
+      id="bg3"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+
+    <h2>
+      demo4 background-repeat: repeat-y
+      <span style="color: red; font-style: italic">
+        by default image will be shown left vertically:</span
+      >
+    </h2>
+    <div
+      id="bg4"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+
+    <h2>
+      demo5 background-repeat: repeat-y; background-position: center 
+      <span style="color: red; font-style: italic"
+        >image will repeat vertically and will be shown in the center of the div:</span
+      >
+    </h2>
+    <div
+      id="bg5"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+
+    <h2>
+      demo6 background-position: bottom-right
+      <span style="color: red; font-style: italic">
+        image will be shown in the bottom right corner</span
+      >
+    </h2>
+    <div
+      id="bg6"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+    ></div>
+    <h2>
+      demo7 background-position: bottom right
+      <span style="color: red; font-style: italic"
+        >image will be shown in the bottom right corner with new defined size:</span
+      >
+    </h2>
+    <div
+      id="bg7"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+    <h2>
+      demo8 background-position: top right; background-size: 150px
+      <span style="color: red; font-style: italic"
+        >image will be shown in the top right corner with new defined size:</span
+      >
+    </h2>
+    <div
+      id="bg8"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+
+    <h2>
+      demo9 background-size: cover
+      <span style="color: red; font-style: italic"
+        >image will be streching in full size of the div</span
+      >
+    </h2>
+    <div
+      id="bg9"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+    <h2>
+      demo10 background-size: contain
+      <span style="color: red; font-style: italic"
+        >image will be shown in full size of image and will be cropped if it is bigger than div:</span
+      >
+    </h2>
+    <div
+      id="bg10"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+    <h2>
+      demo11 background-position: 100px 20%; background-size: 100px
+      <span style="color: red; font-style: italic"
+        >using % and px:</span
+      >
+    </h2>
+    <div
+      id="bg11"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+    <h2>
+      demo12 background-size: 50%: 
+      <span style="color: red; font-style: italic"
+        >image will shown in self full size and take 50% of div:</span
+      >
+    </h2>
+    <div
+      id="bg12"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div> <h2>
+      demo13 background-image: url(animal_images/camel.jpeg), url(decorbackgrounds/paper4.gif); background-repeat: no-repeat, no-repeat; background-position: center, right top; background-size: 200px, cover; 
+      <span style="color: red; font-style: italic"
+        >image will be shown inside background image:</span
+      >
+    </h2>
+    <div
+      id="bg13"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div> <h2>
+      demo14 background-size: cover; background-position: 50px 100px;
+      <span style="color: red; font-style: italic"
+        >image will be in defined position in cover status:</span
+      >
+    </h2>
+    <div
+      id="bg14"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div> <h2>
+      demo15 box-shadow: 5px 5px 5px gray
+      <span style="color: red; font-style: italic"
+        >image with box-shadow:</span
+      >
+    </h2>
+    <div
+      id="bg15"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div> <h2>
+      demo16 background-attachment: scroll
+      <span style="color: red; font-style: italic"
+        >image scroll when you scroll the page:</span
+      >
+    </h2>
+    <div
+      id="bg16"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div> <h2>
+      demo17 background-attachment: fixed
+      <span style="color: red; font-style: italic"
+        >image will be fixed in the page when you scroll the page:</span
+      >
+    </h2>
+    <div
+      id="bg17"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div> <h2>
+      demo18 background-size: cover: background-position: center
+      <span style="color: red; font-style: italic"
+        >center with cover status:</span
+      >
+    </h2>
+    <div
+      id="bg18"
+      ;
+      style="width: 900px; height: 400px; background-color: silver"
+      ;
+    ></div>
+  </body>
+</html>

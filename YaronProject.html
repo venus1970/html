@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yaron porject</title>
+  
+  <body style="background-color: gray">
+   
+ </head>
+ <body>
+  <h1 style="color: blue; text-align: center">about myself</h1>
+ <script>
+
+
+      //ex1
+       function taken()  {
+       var takenNumber = prompt("place a number");
+        takenNumber = Number(takenNumber);
+        if (takenNumber <= 100) {
+            alert("small");
+            console.log("small")
+        } else if (takenNumber<=101 && takenNumber<= 1000) {
+            alert("medium"); 
+            console.log("medium");
+        }else if (takenNumber>1000) {
+            alert("large");
+            console.log("large");
+        }
+       }
+       taken()
+       
+       
+       //ex2
+       function fullname() {
+        var firstName =prompt ("first name");
+        var lastName=prompt("last name");
+         alert("hello"+" "+firstName+" "+lastName);
+       }
+        fullname()
+       
+        //ex3
+        function pass() {
+            var upass = prompt("place your password");
+            if (upass == "hackeru123456") {
+                alert("login was successful");
+                console.log("login was successful");
+            }else{
+                alert("not welcome");
+                console.log("not welcome");
+            }
+        }
+         pass()
+        //ex4
+        function myage() {
+            var age=prompt("enter your age");
+            age=Number(age);
+            if (age<16) {
+             alert("you are not allowed to enter");
+            } else if (age>=16 && age<=18) {
+                alert("you allowed to enter with parntes");
+            }else if (age>18){
+                alert("you wellcome to enter");
+            }
+        }
+        myage()
+        //ex5
+        function operar() {
+         var number1=number(prompt("please ente your first number"));
+         var number1=number(prompt("please ente your second number"));
+         var number1=number(prompt("please ente your third number"));
+         var operator=prompt("plase enter your operator (+) or (-)");
+         var result;
+         var
+         if (operator== "+"){
+            result=number1+number2+number3;
+        }else if (operator=="-"){
+            result=number1-number2-number3;
+        }else{
+            result="invalid";
+            alert("result"+" "+ result);
+        }
+        }
+        operar()
+    </script>
+    <p>
+      ירון יונייב
+      <br />
+      מספר טלפון:0534290381
+      <br />
+      הדבר הכי מורכב היה האופרטורים
+      <br />
+      נהנתי מאוד מהפונקציות
+      <br />
+      אני חושב שהתחום מתאים לי בגלל שאני מתחבר לעבודה המורכבת ועל התוצאות שבסוף
+      <br />
+      המיון היה נורא מעניין ומעשיר
+    </p>
+    <br />
+    <button onclick ="taken()" style="color: brown">Ex-1</button>
+    <br />
+    <button onclick="fulltname()" style="color: red">Ex-2</button>
+    <br />
+    <button onclick="pass()" style="color: purple">Ex-3</button>
+    <br />
+    <button onclick="myage()" style="color: orange">Ex-4</button>
+    <br />
+    <button onclick="operar()" style="color: green">Ex-5</button>
+  </body>
+</html>

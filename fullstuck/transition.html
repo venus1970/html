@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      /*Transition refers to the animation of the element when it changes from one state to another within a given time*//*מאפשר לנו לבצע פעולות אנימטיביות על אלמנטים בפרק זמן מוגדר*/
+      /*In terms of syntax, transition accept 4 properties: property, duration, timing function, delay*/
+      .circle {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+      .circle:hover {
+        border-radius: 50%;
+        background-color: coral;
+      }
+      .circle1 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        transition: 2s; /*We dress the transition on a our regular setting*/
+      }
+      .circle1:hover {
+        border-radius: 50%;
+        background-color: coral;
+      }
+      .circle2 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        transition: background-color 5s; /*The change of background color happens within 5s and the change of border-radius happens immediately*/
+      }
+      .circle2:hover {
+        border-radius: 50%;
+        background-color: coral;
+      }
+      .circle3 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        transition: background-color 5s, border-radius 4s; /*we can be set on transition 2 properties: the change of background color happens within 5s and the change of border-radius happens within 4s*/
+      }
+      .circle3:hover {
+        border-radius: 50%;
+        background-color: coral;
+      }
+      .main {
+        width: 150px;
+        height: 200px;
+        background-color: red;
+        margin-top: 50px;
+        transition: all 4s linear;
+
+        /*"all" takes all parameters from .main:hover/ if we need to set just a one parameter we can defined that - for example: width*/
+        transition-delay: 2s; /*The transition effect has a 2 second delay before starting*/
+      }
+      .main:hover {
+        width: 500px;
+        background-color: aqua;
+      }
+
+      .animation div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 3s;
+      } /*The transition-timing-function property specifies the speed curve of the transition effect.
+
+The transition-timing-function property can have the following values: linear, ease, ease-in, ease-out, ease-in-out*/
+      #div1 {
+        transition-timing-function: linear;
+      }
+      #div2 {
+        transition-timing-function: ease;
+      }
+      #div3 {
+        transition-timing-function: ease-in;
+      }
+      #div4 {
+        transition-timing-function: ease-out;
+      }
+      #div5 {
+        transition-timing-function: ease-in-out;
+      }
+      #div6 {
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      } /*cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function*/
+
+      .animation:hover div {
+        width: 500px;
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transition</h1>
+    <h2>Transition by default happends immediately:</h2>
+    <div class="circle"></div>
+    <h2>Transition can be set to a time:</h2>
+    <div class="circle1"></div>
+    <h2>Transition setting on a background-color:</h2>
+    <div class="circle2"></div>
+    <h2>Two and more properties setting on a transition:</h2>
+    <div class="circle2"></div>
+    <h2>Ttransition-delay:</h2>
+    <div class="main"></div>
+
+    <h2>Transition-timing-function</h2>
+    <!--The transition-timing-function property specifies the speed curve of the transition effect.
+
+The transition-timing-function property can have the following values: linear, ease, ease-in, ease-out, ease-in-out-->
+    <div class="animation">
+      <div id="div1">linear</div>
+      <div id="div2">ease</div>
+      <div id="div3">ease-in</div>
+      <div id="div4">ease-out</div>
+      <div id="div5">ease-in-out</div>
+      <div id="div6">cubic-bezier()</div>
+    </div>
+    <!--cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function-->
+  </body>
+</html>

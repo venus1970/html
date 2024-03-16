@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-model</title>
+    <style>
+      h1 {
+        color: black;
+        background-color: aqua;
+      }
+      .box {
+        background-color: yellow;
+        height: 150px;
+        width: 150px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: blueviolet;
+        margin-left: 20px;
+        display: ;
+      }
+      #box4 {
+        background-color: black;
+        border-width: 10px;
+        border-style: solid;
+        border-color: red;
+        height: 150px;
+        width: 150px;
+        border-left-width: 5px;
+        border-left-style: dashed;
+        margin-left: 20px;
+        color: #fff;
+        padding-top: 20px;
+        padding-left: 30px;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      #box5 {
+        background-color: pink;
+        border-width: 10px;
+        border-style: solid;
+        border-color: black;
+        height: 150px;
+        width: 150px;
+        border-left-width: 5px;
+        border-left-style: dashed;
+        margin-left: 20px;
+        border-radius: 10px 20px 30px 40px;
+        padding: 40px;
+        display: inline-block;
+        margin: 20px; 0px;/*ריווח חיצוני למעלה ולמטה לאלמנט אמצעי*/
+      }
+      #box6 {
+        background-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-color: black;
+        height: 150px;
+        width: 150px;
+        border-right-width: 5px;
+        border-right-style: dotted;
+        margin-left: 20px; /*margin: 20px 0px meaning give 20px in top and bottom /left and right margin don't do anything*/
+        color: #fff;
+        border-radius: 100px;
+        padding-left: 30px;
+        padding-top: 30px;
+        display: inline-block;/*inline-block מקבל גודל של האלמנט עצמו*/
+        margin-bottom: 20px;
+      }
+      .container{
+        width:90%;
+        background-color: silver;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box-model</h1>
+    <h2>Box-model1</h2>
+    <div class="box">box1</div>
+    <br />
+    <div class="box">box2</div>
+    <br />
+    <div class="box">box3</div>
+    <br />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+      reprehenderit voluptates voluptatem deleniti quasi voluptas non libero
+      odit ad, nobis consequuntur aliquam ipsum enim recusandae, cum praesentium
+      consectetur mollitia animi facilis culpa. Vitae, dolor ullam nobis optio
+      architecto voluptatum dicta? Inventore non maiores quia quos, magnam nam
+      nobis sunt explicabo?
+    </p>
+
+    <h2>Box-model2</h2>
+    <div class="container">
+      <div style="display: inline-block" id="box4">box4</div>
+      <br />
+      <div style="display: inline-block" id="box5">box5</div>
+      <br />
+      <div id="box6">box6</div>
+    </div>
+    <!-- -הוא אלמנט שהוא בלוק כברירת מחדלdiv -->
+    <br />
+    <h1
+      style="
+        background-color: blue;
+        display: inline;
+        width: 60%;
+        text-align: center;
+        margin: auto;
+      "
+    >
+      block elements
+    </h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores vero,
+      quaerat fugiat eius quis molestias et quidem atque sapiente quod nam dicta
+      nisi beatae tenetur quos maiores a, suscipit iste, aut assumenda
+      <span style="background-color: red; width: 400px; display: block">
+        >doloremque ex eaque! Iusto assumenda adipisci id sit ab reiciendis
+        suscipit cum ad odit? Sequi officia similique accusamus dolores!</span
+      >
+      Tempora non ab autem sequi, ut dicta, reprehenderit amet corrupti,
+      voluptatem natus magni. provident neque debitis odit! Vero eaque omnis
+      similique doloribus corporis doloremque quis voluptatem. Provident placeat
+      corrupti sequi voluptatem fuga, perferendis ab iste minima aliquam
+      consequatur. Impedit consequuntur dolorem vitae quam dignissimos
+      voluptates ipsam nostrum.
+    </p>
+  </body>
+</html>

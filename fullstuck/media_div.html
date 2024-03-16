@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media div</title>
+    <style>
+      div {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        margin: auto;
+      }
+      p {
+        padding: auto;
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 500;
+        font-style: italic;
+      }
+      @media (max-width: 800px) {
+        div {
+          background-color: blue;
+          width: 300px;
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rerum
+        alias fuga quisquam doloribus assumenda reiciendis similique architecto
+        quaerat natus. Ratione eaque fugiat ipsa amet, quae magnam cupiditate
+        eligendi dolore!
+      </p>
+      <button style="color: red">Click me</button>
+    </div>
+  </body>
+</html>

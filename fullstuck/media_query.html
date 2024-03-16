@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: rgb(234, 255, 0);
+      }
+      @media screen and (max-width: 1200px) {
+        body {
+          background-color: lightskyblue;
+        }
+      } /*here we give condition to the page to change the background color based on the screen size of the device (screen>1200px change color to lightskyblue)*/ /*הגדרות של מדיה משמשות אותנו לרספונסיביות*/
+      /*
+      max-width: 1200px;/width <= 1200px/ less than 1200px.
+      min-width: 780px; /width >= 780px/ more than 780px.
+      */
+      .main {
+        width: 500px;
+
+        height: 500px;
+        background-color: rgb(100, 239, 87);
+        font-size: 35px;
+        padding: 50px 100px;
+      } /*
+      @media (max-width: 800px) {
+        .main {
+          font-size: 22px;
+
+          width: 100%;
+          height: 150px;
+          padding: 20px 30px;
+        }
+      }*/
+
+      /*media query means that we can change the layout/design of the page based on the screen size of the device by responsive design/here we have mobile design that usually <800px*/
+      /*נקודות שבירה של דפדפן למסכי מחשב מעל 1200 px, למסכי טאבלט מ780 ל1200ת ולמכי טלפון נייד פחות מ780*/
+      /*היום גם ניתן להשתמש בסינטקס החדש במקום width <= 880px אפשר לכתוב wiidth <= 880px*/
+      @media (width <= 880px) {
+        .main {
+          background-color: salmon;
+          font-size: 22px;
+          width: 100%;
+          height: 150px;
+          padding: 20px 30px;
+        } /*כאן בעצם הפקודה אומרת: תכיל את העיצוב על הקלס main למסכים שגודל שלהם  פחות או שווא ל880 px*/
+      }
+      @media (width <= 1200px) {
+        .btn {
+          display: none;
+        }
+      } /*here we define the button class on 2 buttons that will be hidden on the screen size of the devices that are less than 1200px*/
+      /*מתאים גם ליצור המבורגר שמופיע בניידים כאשר רוצים להסתיר את התפריט*/
+      .mobile {
+        width: 500;
+        height: 500;
+        background-color: red;
+      }
+      /*demo3*/
+      @media (width >= 1200px) and (width <= 1300px) {
+        .mobile {
+          background-color: aqua;
+        }
+      } /*בטווח שבין 1200 ל1300 תהיה צבע aqua במסכי מחשב*/
+      @media (width <= 1200px) {
+        .mobile {
+          background-color: blue;
+        }
+      }
+      @media (width <= 600px) {
+        .mobile {
+          display: none;
+        }
+      } /*מתחת ל1200 תהיה צבע blue במסכי טאבלט וניידים*/
+      /*here we hide the mobile class on the screen size of the devices that are less than 880px*/
+      /*נקודות שבירה של דפדפן למסכי מחשב מעל 1200 px, למסכי טאבלט מ780 ל1200ת ולמכי טלפון נייד פחות מ780*/
+      /*היום גם ניתן להשתמש בסינטקס החדש במקום width <= 880px אפשר לכתוב wiidth <= 880px*/
+      @media (width <= 880px) {
+        .mobile {
+          background-color: salmon;
+          font-size: 22px;
+          width: 100%;
+          height: 150px;
+          padding: 20px 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media query</h1>
+    <h2>demo1</h2>
+
+    <div class="main">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nihil
+        itaque nesciunt explicabo, ab voluptatibus saepe iusto porro dignissimos
+        eveniet cumque provident ut architecto dicta consequatur, sapiente
+        veritatis officiis ea.
+      </p>
+    </div>
+    <h2>demo2</h2>
+    <div class="main">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente iusto
+        incidunt repudiandae provident qui commodi. Illum consequatur, doloribus
+        fugiat saepe odio veritatis nesciunt quibusdam velit labore, officiis
+        vel repellat ex.
+      </p>
+      <button>Hello!</button>
+      <button class="btn">Hello!</button>
+      <button class="btn">Hello!</button
+      ><!--כאן אנחנו הגדרנו שני כפתורים כקלס ובcss הגדרנו התנייה שבמסכים פחות מ1200 את הכפתורים להעלים-->
+    </div>
+    <h2>demo3</h2>
+    <div class="main mobile">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+        accusantium blanditiis nihil corporis veniam animi saepe ipsum dicta
+        fugiat hic quos rem aliquid recusandae, debitis voluptatem repellendus,
+        beatae amet autem.
+      </p>
+    </div>
+  </body>
+</html>
+<!--/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}-->

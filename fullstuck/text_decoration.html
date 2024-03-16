@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text-deoration</title>
+    <style>
+      .main {
+        background-color: white;
+        width: 600;
+        height: 450;
+        text-align: center;
+        margin: auto; /*centers content*/
+      }
+      .main1 {
+        background-color: white;
+        width: 600;
+        height: 450;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body style="background-color: cadetblue">
+    <marquee width="40%" direction="left" height="30%">
+      This is sample scrolling text.
+    </marquee>
+    <marquee width="60%" direction="right" height="100px">
+      This is a sample scrolling text that has scrolls texts to the right.
+    </marquee>
+    <marquee behavior="slide" direction="up" scrollamount="1"
+      >Slow Scrolling</marquee
+    >
+    <marquee behavior="scroll" direction="down" scrollamount="12"
+      >Little Fast Scrolling</marquee
+    >
+    <div class="main">
+      <h1>Text-decoration</h1>
+      <h2>The strong tag</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+        <strong style="color: red"
+          >neque culpa accusamus repudiandae quia deserunt, molestias,
+          ipsam</strong
+        >
+        adipisci asperiores nobis voluptate exercitationem consequuntur dolores
+        laborum! Laborum officia quidem tempore suscipit.<!--The <strong> tag is used to define text with strong importance. The content inside is typically displayed in bold-->
+        <!--strong=bold-->
+      </p>
+      <h2>The italic wroute</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas
+        facilis <em style="color: blue">reprehenderit</em> similique totam
+        possimus sapiente sequi, quisquam commodi exercitationem nostrum in
+        neque quidem fugiat ipsum cum numquam ipsa explicabo?<!--em=כתב נטוי - italic wroute-->
+      </p>
+      <h2>The ins tag</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas
+        facilis <ins style="color: blue">reprehenderit</ins> similique totam
+        possimus sapiente sequi, quisquam commodi exercitationem nostrum in
+        neque quidem fugiat ipsum cum numquam ipsa explicabo?<!--for define text to be highlighted-->
+      </p>
+      <h2>The mark tag</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas
+        facilis <mark style="color: blue">reprehenderit</mark> similique totam
+        possimus sapiente sequi, quisquam commodi exercitationem nostrum in
+        neque quidem fugiat ipsum cum numquam ipsa explicabo?<!--for define text to be highlighted-->
+      </p>
+      <h2>The del tag</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas
+        facilis <del style="color: blue">reprehenderit</del> similique totam
+        possimus sapiente sequi, quisquam commodi exercitationem nostrum in
+        neque quidem fugiat ipsum cum numquam ipsa explicabo?<!--delete defination-->
+      </p>
+      <h2>The q tag</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas
+        facilis <q style="color: blue">reprehenderit</q> similique totam
+        possimus sapiente sequi, quisquam commodi exercitationem nostrum in
+        neque quidem fugiat ipsum cum numquam ipsa explicabo?<!--for short inline quotations-->
+      </p>
+    </div>
+    <div class="main1">
+      <h2>
+        The <ins>sup</ins> (superscript) and <ins>sub</ins> (subscript) tags
+      </h2>
+
+      <p>
+        Lotem <sup style="color: blue">1</sup> dolor sit amet consectetur
+        adipisicing elit. Minima <sub style="color: blue">2</sub> quos beatae
+        obcaecati <sup style="color: red">excepturi</sup> ea adipisci dolore
+        nulla eaque fugit optio. Asperiores, reiciendis! Explicabo
+        <sub style="color: red">doloremque</sub> eaque ratione.
+      </p>
+      <!--for define supercript and subscript text-->
+      <h3>The <ins>small</ins> tag</h3>
+      <p>excepturi atque <small style="color: red">velit</small> velit.</p>
+      <!--for define text to be highlighted in smaller text size-->
+    </div>
+  </body>
+</html>

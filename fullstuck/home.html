@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homeex</title>
+    <style>
+      body {
+        background-color: white;
+      }
+      body {
+        background-color: aqua;
+      }
+      .container {
+        margin: 0 auto;
+        width: 95%;
+        max-width: 850;
+      }
+
+      h1 {
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        line-height: 1.15;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      p {
+        color: black;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: 400;
+        line-height: 1.75;
+        margin-bottom: 2em;
+      }
+      @media (min-width: 600px) {
+        p {
+          font-size: 1.25rem;
+          color: blue;
+        }
+      }
+      @media(min-width: 600px) {
+
+      body{
+        background-color: rgb(255, 0, 174);
+      } 
+      }
+      @media (min-width: 800px) {
+        p {
+          font-size: 1.5rem;
+          line-height: 1.5;
+          color: red;
+        }
+      }
+      .wrapper h1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .img-area {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .single-img {
+        padding: 0 20px 20px;
+      }
+      img:hover {
+        opacity: 0.5;
+        transition: 0.9s;
+      }
+      h2{
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      /*Flקx-container styling*/
+      #flex-container{
+        display: flex;
+        justify-content: space-between;
+
+      }
+      /*Styling for animals*/
+
+      
+      .animal-1{
+       
+        order: 2;
+      }
+      .animal-2{
+       
+        order: 4;
+      }
+
+
+
+      .animal-3{
+        
+        order: 3;
+      }
+      .animal-4{
+       
+        order: 0;
+      } .animal-4{
+       
+        order: 5;
+      } .animal-4{
+       
+        order: 6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media query article</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, impedit
+      aspernatur? Est eveniet exercitationem saepe recusandae voluptatem,
+      temporibus aliquid provident dolores maxime consequatur quae illum
+      explicabo! In odit laborum commodi beatae amet doloremque recusandae
+      iusto, quisquam quasi dolore quia consequuntur qui. Fugit officia
+      similique sit aliquid dolor reiciendis ducimus hic facere ullam et veniam
+      suscipit culpa, esse consectetur placeat! Nam, doloremque odit. Voluptatum
+      error cum, eius deserunt fugit porro voluptas illum eveniet totam.
+      Corrupti quas distinctio obcaecati voluptatibus. Est, totam numquam.
+      Tempore veniam ipsam mollitia magni inventore porro quaerat possimus a
+      necessitatibus excepturi officia voluptate fugiat, voluptatibus iste
+      sapiente aspernatur distinctio odio. Tempora, quae suscipit ab veritatis
+      consequuntur officia, nemo ratione et repellat voluptatem voluptates.
+      Pariatur nulla, velit eaque aspernatur molestiae minima ut. Voluptatibus
+      nemo minima perferendis deleniti mollitia similique soluta in fuga.
+      Voluptatum expedita velit, eos, odio, cumque praesentium veniam sunt
+      accusantium perferendis repellendus illo totam officia magni itaque
+      consequatur est aut obcaecati aliquam! Mollitia libero officia maiores
+      deserunt vitae. Minus quos accusantium recusandae, iste ea vitae quaerat
+      temporibus hic doloribus sunt esse ratione laudantium cupiditate eligendi
+      voluptas fuga? Saepe, dolores excepturi. Pariatur, excepturi velit,
+      praesentium voluptas repellat expedita dignissimos placeat eveniet maiores
+      esse perferendis, aperiam sequi quisquam voluptatem!
+    </p>
+    <div class="wrapper">
+      <h2 style="text-align: center; color: red">Flexbox Image Gallery</h2>
+      
+    </div>
+   
+    <div id="flex-container">
+      <div class="flex-item">
+ <div class="wrapper">
+     
+      <div class="img-area">
+        <div class="single-img">
+          <img src="animal_images/camel.jpeg" alt="fashion" />1
+        </div>
+        <div class="single-img">
+          <img src="animal_images/coala.jpeg" alt="fashion" />2
+        </div>
+
+        <div class="single-img">
+          <img src="animal_images/fl.jpg" alt="fashion" />3
+        </div>
+
+        <div class="single-img">
+          <img src="animal_images/parrot.jpeg" alt="fashion" />4
+        </div>
+        <div class="single-img">
+          <img src="animal_images/fox.jpeg" alt="fashion" />5
+        </div>
+        <div class="single-img">
+          <img src="animal_images/dog.jpeg" alt="fashion" />6
+        </div>
+      </div>
+ <h2>Order property: flexbox</h2>
+<div class="img-area">
+        <div class="animal animal-1">
+          <img src="animal_images/camel.jpeg" alt="fashion" />1
+        </div>
+        <div class="animal animal-2">
+          <img src="animal_images/coala.jpeg" alt="fashion" />2
+        </div>
+
+        <div class="animal animal-3">
+          <img src="animal_images/fl.jpg" alt="fashion" />3
+        </div>
+
+        <div class="animal animal-4">
+          <img src="animal_images/parrot.jpeg" alt="fashion" />4
+        </div>
+        <div class="animal animal-5">
+          <img src="animal_images/fox.jpeg" alt="fashion" />5
+        </div>
+        <div class="animal animal-6">
+          <img src="animal_images/dog.jpeg" alt="fashion" />6
+        </div>
+      </div>
+
+    
+  </body>
+</html>

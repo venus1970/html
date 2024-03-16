@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+ h1 {
+        color: red;
+        font-size: 300%;
+        font-family: sans-serif;
+      }
+   
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+  .box {
+        border: 5px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+
+h4 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Niconne', cursive;
+  color: #4949eb;
+  text-shadow: 2px 2px 0px  #957dad,
+               4px 4px 0px #ee4b2b,
+               6px 6px 0px #00c2cb,
+               8px 8px 0px #ff7f50,
+               10px 10px 0px #553c9a;
+}
+</style>  
+<head>
+  <body>
+    <div class="myDiv">
+      <h1 style="text-align: center"><span style="color: red">HTML</span>&nbsp<span style="color: blue">lesson</span>&nbsp<span style="color: green">with</span>&nbsp<span style="color: darkorange">Oded</span>&nbsp<span style="color: darkmagenta">Buchris</span>
+    </h1>
+ 
+ <h2 style="text-align: center">Zila Aharoni project</h2>
+  
+</div>
+     
+   
+    <h1 style="background-color: blue; color: aliceblue">
+      Multiple DIV Elements
+    </h1>
+
+    <div class="box" style="background-color: #fff4a3">
+     
+     
+      <h2>London</h2>
+      <p>London is the capital city of England.</p>
+      <p>London has over 13 million inhabitants.</p>
+      
+     
+      <img src="London.jpeg" alt="London" width="300" height="150">
+    </div>
+    
+
+    <div class="box" style="background-color: #ffc0c7">
+      <h2>Oslo</h2>
+      <p>Oslo is the capital city of Norway.</p>
+      <p>Oslo has over 600.000 inhabitants.</p>
+       <img src="Oslo.jpeg" alt="London" width="300" height="150">
+    </div>
+
+    <div class="box" style="background-color: #d9eee1">
+      <h2>Rome</h2>
+      <p>Rome is the capital city of Italy.</p>
+      <p>Rome has almost 3 million inhabitants.</p>
+       <img src="Rome.jpeg" alt="London" width="300" height="150">
+    </div>
+    <h1 style="background-color: blue; color: aliceblue">Grid Example</h1>
+
+<p><mark>Align three DIV elements side by side.</mark></p>
+
+<div class="grid-container">
+
+<div style="background-color:#FFF4A3;">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+  <img src="London.jpeg" alt="London" width="300" height="150">
+</div>
+
+<div style="background-color:#FFC0C7;">
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 600.000 inhabitants.</p>
+   <img src="Oslo.jpeg" alt="London" width="300" height="150">
+</div>
+
+<div style="background-color:#D9EEE1;">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has almost 3 million inhabitants.</p>
+  <img src="Rome.jpeg" alt="London" width="300" height="150">
+</div>
+
+</div>
+
+    <h1 style="background-color: blue; color: aliceblue">Div & Span</h1>
+    <div style="background-color: aquamarine; text-align: center">
+      <h2>div <span style="color: red">title</span> 1</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="background-color: chartreuse">Dolore odio
+        nobis asperiores at maxime hic optio fugit placeat distinctio. Ab. ipsum</span>
+        dolor sit amet consectetur, adipisicing elit. Nisi soluta quo nesciunt
+        voluptas odit nulla vitae eveniet quae obcaecati ullam? Saepe corrupti
+        temporibus eos corporis voluptates dolorum quos soluta error quae
+        reprehenderit aliquid porro, numquam veritatis laudantium sequi! Atque
+        eaque sint minus veniam temporibus blanditiis officia eum impedit
+        ducimus quasi.
+      </p>
+      <img src="hero_zebra_animals.jpg" alt="zebra" width="200" height="150" />
+    </div>
+    <div style="background-color: #ffc0c7">
+      <h2>div <span style="color: blue">title</span> 2</h2>
+      <p>
+        Lorem dolor sit amet consectetur, adipisicing elit. <span style="font-weight: 300; font-size: large; color:  blue">soluta quo
+        nesciunt voluptas odit nulla vitae eveniet quae obcaecati ullam?</span>
+        corrupti temporibus eos corporis voluptates dolorum quos soluta error
+        quae reprehenderit aliquid porro, numquam veritatis laudantium sequi!
+        Atque eaque sint minus veniam temporibus blanditiis officia eum impedit
+        ducimus quasi.
+      </p>
+      <img
+        src="default_Image-by-gerdragon.-Neuschwanstein.-Bavaria_-Germany..jpg"
+        alt="default"
+        width="200"
+        height="150"
+      />
+    </div>
+
+    <div style="background-color: #fff4a3">
+      <h2>div title 3</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sunt
+        debitis tempore, sapiente voluptates rem ea dolorem eos ducimus ad.
+        ipsum dolor sit amet consectetur, adipisicing elit. Nisi soluta quo
+        nesciunt voluptas odit <span style="background-color: hotpink"> vitae eveniet quae obcaecati ullam? Saepe</span>
+        corrupti temporibus eos corporis voluptates dolorum quos soluta error
+        quae reprehenderit aliquid porro, numquam veritatis laudantium sequi!
+        Atque eaque sint minus veniam temporibus blanditiis officia eum impedit
+        ducimus quasi.
+      </p>
+      <img src="image.jpg" alt="zebra" width="200" height="150" />
+    </div>
+
+    <div style="background-color: beige">
+      <h2>div title 4</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        similique aut fuga asperiores enim. Corrupti ad soluta recusandae at
+        nulla. ipsum dolor sit amet consectetur adipisicing elit. Maiores, sunt?
+        Suscipit quasi <span style="background-color: gold">ad expedita, aliquam aut ratione aspernatur</span>
+        voluptatum? ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+        soluta quo nesciunt voluptas odit nulla vitae eveniet quae obcaecati
+        ullam? Saepe corrupti temporibus eos corporis voluptates dolorum quos
+        soluta error quae reprehenderit aliquid porro, numquam veritatis
+        laudantium sequi! Atque eaque sint minus veniam temporibus blanditiis
+        officia eum impedit ducimus quasi.
+      </p>
+      <img src="chichen.jpg" alt="chichen" width="200" height="150" />
+    </div>
+    <div style="background-color: chartreuse">
+      <h2>div title <span style="font-size: 40px; color: rgb(241, 7, 140)">5</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque
+        consectetur atque voluptas excepturi dolor fuga cupiditate architecto ut
+        dolorum. ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi quam optio atque perferendis blanditiis tenetur libero expedita. Maiores exercitationem neque officia quod ea quibusdam illo officiis, dolores iure, eum magnam ex labore, sunt vel ducimus error. Quisquam dolore voluptate, quod nostrum ex sunt eaque repellendus, facere similique expedita adipisci. sit amet consectetur, adipisicing Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem animi illum, pariatur amet sequi illo? Ipsa necessitatibus saepe quam dignissimos fugiat sapiente aperiam rerum consequatur? Ipsa, facere voluptatibus? Culpa, voluptate ducimus! Dignissimos tempora id <span style="background-color: white">necessitatibus ratione culpa, vel, quas,</span> nostrum fugiat soluta voluptatum nobis commodi veritatis ducimus reprehenderit similique rem?elit. soluta
+        quo nesciunt voluptas <span style="background-color: white">odit nulla</span> vitae eveniet quae obcaecati ullam?
+        Saepe corrupti temporibus eos corporis voluptates dolorum quos soluta
+        error quae reprehenderit aliquid porro, numquam veritatis laudantium
+        sequi! Atque eaque sint minus veniam temporibus blanditiis officia eum
+        impedit ducimus quasi.
+      </p>
+      <img src="parrot.jpeg" alt="parrot" width="200" height="150" />
+    </div>
+
+   <h1 style="background-color: blue; color: aliceblue; text-align: center">The span element</h1>
+<div style="text-align: center">
+    <p style="font-size: x-large">
+      My mother has
+      <span style="color: blue; font-weight: bold">blue</span> car and my
+      father has <span style="color: red; font-weight: bold">red</span> car.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam nihil iste corrupti porro iusto natus quia nesciunt perferendis, voluptatem corporis a tempore, esse minima vitae fugit eos ea saepe <span style="background-color: rgb(101, 101, 238)"> temporibus et illum, quae reiciendis nostrum? Eos odio, officia nobis adipisci enim velit</span>&nbsp<span style="background-color: rgb(236, 85, 85)">reprehenderit a possimus veniam est dolores exercitationem dignissimos blanditiis nihil aperiam sit. Dolore nihil</span> similique adipisci repudiandae distinctio quas totam blanditiis itaque. Hic voluptate illum quod, repudiandae vel dolore ipsum natus necessitatibus suscipit laborum obcaecati provident exercitationem fugiat, in aut expedita eaque consequatur quia explicabo debitis? Unde dolor asperiores illo iusto. Laborum labore voluptatibus necessitatibus perferendis!</p>
+
+    <img src="redblue.jpeg" alt="car" width="200" height="150">
+    <img src="redblue1.jpg" alt="car" width="200" height="150">
+    </div>
+    <div style="text-align: center; background-color: aquamarine" class="box">
+      <h2>Link to previous page:</h2>
+
+<img src="/Images/happy.PNG" alt="smily" width="50" height="40">
+<a href ="classexe1.html"><mark>connect to <span style="color: red">classexe1</span>page</mark></a>
+</div>
+<div style="border-style: dashed; background-color: #FFC0C7; text-align: center">
+<h2 style="color: blue">Clickability features on the word in paragraph, on heading and on images:</h2>
+<h3 style="font-style: italic">on heading:</h3>
+ <a href="https://www.steinway.com/news/features/the-benefits-of-playing-piano" style="color:red"><h2>Piano playing</h2></a>
+ <h3 style="font-style: italic">on the word in the paragraph:</h3>   
+<p>Piano practice also boosts cognitive and intellectual abilities, which is to say it makes you smarter and activates similar parts of the brain used in spatial reasoning and math. <a href="hero_zebra_animals.jpg"> Studying piano</a> has also been shown to amazingly improve memory — particularly verbal memory — and build good habits like focus and perseverance, diligence and creativity. Children who had a few years of piano study under their belts could remember twenty percent more vocabulary words than their peers. And childhood musicians are better equipped later in life to retain information from speeches and lectures. Playing <a href="https://www.w3schools.com">piano</a> has been shown to increase spatial-temporal ability, which figures heavily in math, science and engineering. Regular music practice at an early age can even make structural changes to the brain that stay with you for the rest of your life, making your brain more efficient both while playing and in extra-musical endeavors.</p>
+ <h3 style="font-style: italic">Images as a Links:</h3>
+ <p>The images below are links. Try to click on them.</p>
+<a href="https://www.google.com/">
+        <img src="piano.jpeg" alt="dog">
+        
+<br><br>
+
+<a href="https://www.w3schools.com"><img src="smiley (1).gif" alt="HTML tutorial" width="100" height="100"></a>
+<h4>Thank you for listening !</h4>
+
+</div>
+</div>
+</body>
+</html>

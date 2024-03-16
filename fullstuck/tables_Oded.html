@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      h1 {
+        background-color: blue;
+        color: white;
+        text-align: center;
+      }
+      h2 {
+        background-color: silver;
+        color: black;
+        padding-left: 10px;
+      }
+      #LastTable tr:nth-child(even) {
+        background-color: pink
+      
+      }
+      #LastTable tr:nth-child(odd) {
+        background-color: lightgreen;
+        
+      }
+      #LastTable tr:hover {
+        background-color: lightsalmon;
+      }
+
+      tr:hover {
+        background-color: #ccc;
+      }
+
+      th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #333;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table lesson</h1>
+    <table>
+      <!--לכל טבלה יש 3 תגיות עיקריות tr, th, td-->
+
+      <!--<th></th> - table head cell-->
+      <!--<tr></tr> - table row-->
+      <!--<td></td> - table data-->
+      <tr>
+        <td>Dani</td>
+        <td>Coen</td>
+        <td>303989876</td>
+
+        <td>Oded</td>
+        <td>Zaguri</td>
+        <td>303989877</td>
+      </tr>
+    </table>
+    <h2>Table row</h2>
+    <table>
+      <tr>
+        <td>Dani</td>
+        <td>Coen</td>
+        <td>303989876</td>
+      </tr>
+      <tr>
+        <td>Oded</td>
+        <td>Zaguri</td>
+        <td>303989877</td>
+      </tr>
+    </table>
+    <h2>Table border</h2>
+    <table border="1">
+      <tr>
+        <td>Dani</td>
+        <td>Coen</td>
+        <td>303989876</td>
+      </tr>
+      <tr>
+        <td>Oded</td>
+        <td>Zaguri</td>
+        <td>303989877</td>
+      </tr>
+    </table>
+    <h2>Table border + cellspacing</h2>
+    <table border="1" cellspaing="0">
+      <tr>
+        <td>Dani</td>
+        <td>Coen</td>
+        <td>303989876</td>
+      </tr>
+      <tr>
+        <td>Oded</td>
+        <td>Zaguri</td>
+        <td>303989877</td>
+      </tr>
+    </table>
+    <h2>Table with head - 100% width</h2>
+    <table border="1" cellspacing="0" width="100%">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Id number</th>
+      </tr>
+      <tr style="text-align: center">
+        <td>Dani</td>
+        <td>Coen</td>
+        <td>303989876</td>
+      </tr>
+      <tr style="text-align: center">
+        <td>Oded</td>
+        <td>Zaguri</td>
+        <td>303989877</td>
+      </tr>
+    </table>
+    <h2>Table with <mark>cuption tag</mark> (by default above the table)</h2>
+    <!--caption tag adds a caption to the table -and it is the only tag that can be placed before or after the table and dispays above or below the table כותרת בהקשר לתוכן הטבלה שמופיעה מעל או מתחת לטבלה-->
+    <table border="1" cellspacing="0" width="100%">
+      <caption style="color: red">
+        Employee data
+      </caption>
+      <tr>
+        <th width="100px">First Name</th>
+        <th width="200px">Last Name</th>
+        <th width="300px">Id number</th>
+      </tr>
+      <tr style="text-align: center">
+        <td>Dani</td>
+        <td>Coen</td>
+        <td>303989876</td>
+      </tr>
+      <tr style="text-align: center">
+        <td>Oded</td>
+        <td>Zaguri</td>
+        <td>303989877</td>
+      </tr>
+      <caption style="color: blue; caption-side: bottom">
+        Employee data - updated
+      </caption>
+    </table>
+    <h2>
+      Table with <mark>style="caption-side:bottom"</mark> tag (below the table)
+    </h2>
+
+    <table border="1" cellspacing="0" width="100%">
+      <caption style="color: blue; caption-side: bottom">
+        Employee data - updated
+      </caption>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Id number</th>
+      </tr>
+      <tr style="text-align: center">
+        <td>Dani</td>
+        <td>Coen</td>
+        <td>303989876</td>
+      </tr>
+      <tr style="text-align: center">
+        <td>Oded</td>
+        <td>Zaguri</td>
+        <td>303989877</td>
+      </tr>
+    </table>
+    <h2>Table <mark>tr</mark> style + width="100%"</h2>
+    <table border="" cellplacing="0" width="100%">
+      <tr style="background-color: rgb(123, 69, 239)">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID number</th>
+      </tr>
+
+      <tr style="background-color: silver">
+        <td>Dani</td>
+        <td>Coen</td>
+        <td>303989876</td>
+      </tr>
+      <tr style="background-color: rgb(251, 247, 133)">
+        <td>Oded</td>
+        <td>Zaguri</td>
+        <td>303989877</td>
+      </tr>
+    </table>
+    <h2>Table <mark>tr</mark> style + width="600px"</h2>
+    <table border="" cellplacing="0" width="600px">
+      <tr style="background-color: rgb(123, 69, 239)">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID number</th>
+      </tr>
+
+      <tr style="background-color: silver">
+        <td>Dani</td>
+        <td>Coen</td>
+        <td>303989876</td>
+      </tr>
+      <tr style="background-color: rgb(251, 247, 133)">
+        <td>Oded</td>
+        <td>Zaguri</td>
+        <td>303989877</td>
+      </tr>
+    </table>
+    <h2>Table with colgroup - col tag - columns style</h2><table border="" cellspacing="0" width="600px">
+    <colgroup><!-- colgroup tag groups columns together and styles them -->
+    <col style="background-color: lightblue; width: 150px"><!--col 1 column styled -->
+    <col style="background-color: pink; width: 200px"><!--col 2 column styled -->
+    <col span="2" style="background-color: lightgreen; width: 200px"><!--col 3 and 4 grouped and styled together-->
+   
+<col style="color: blue; background-color: rgb(245, 245, 114); width: 80px;"><!--col 5 column styled --> 
+<tr style="color: blue; background-color: rgb(229, 151, 196);"> 
+  
+  <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>ID number</th>
+        <th>Gender</th>
+      </tr>
+      <tr style="background-color: lightskyblue; text-align: center;">
+        <td>col 1</td>
+        <td>col 2</td>
+        <td colspan="2">col 3 and 4</td><!--colspan combined cells (cols 3 and 4 into one cell) מיזוג תאים באמצעות colspan-->
+        <td>col 5</td>
+       
+      </tr>
+    <tr>
+      <td>Dani</td>
+      <td>Coen</td>
+      <td>30</td>
+      <td>303989876</td>
+      <td>male</td>
+    </tr>
+    <td>Oded</td>
+    <td>Zaguri</td>
+    <td>25</td>
+    <td>303989877</td>
+  <td>male</td></tr>
+     <tr>
+      <td>Tamir</td>
+      <td>Gonen</td>
+      <td>40</td>
+      <td>303989875</td>
+      <td>male</td>
+    </tr>
+    <td>Alis</td>
+    <td>Dahan</td>
+    <td>27</td>
+    <td>303989874</td><td>female</td></tr>
+    </table>
+    <h2>Table design with thead, tbody, tfooter</h2><!--thead, tbody, tfooter tags allow separating header, body and footer content in our table-->
+    <table border="1" cellspacing="0" width="500px">
+      <caption style="color: red">Design table</caption>
+    <thead style="background-color: aquamarine;">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+          <th>ID number</th>
+          <th>Gender</th></tr>
+        </thead>
+
+
+          <tbody style="background-color: cadetblue;">
+          <tr>
+            <td>Tamir</td>
+            <td>Gonen</td>
+            <td>35</td>
+           <td>303989874</td>
+           <td>male</td></tr>
+           <tr>
+            <td>Oded</td>
+            <td>Cohen</td>
+            <td>30</td>
+           <td>303989878</td>
+           <td>male</td></tr>
+           <tr>
+            <td>Daniel</td>
+            <td>Gonen</td>
+            <td>25</td>
+           <td>303989879</td>
+           <td>male</td></tr>
+           <tr>
+            <td>Shalom</td>
+            <td>Zaguri</td>
+            <td>40</td>
+           <td>303989871</td>
+           <td>male</td></tr>
+           <tr>
+            <td>Alis</td>
+            <td>Dahan</td>
+            <td>40</td>
+            <td>303989872</td><td>female</td></tr>
+           
+          </tbody>
+          <tfooter>
+            <tr style="background-color:rgb(248, 248, 105);">
+
+              <td colspan="4">Total members:</td>
+              <td>5</td>
+            </tr>
+          </tfooter>
+          </table>
+          <h2 style="background-color: silver;">Time Table</h2>
+          <table border="1" cellspacing="1" bordercolor="blue" bgcolor="yellow">
+      <tr>
+        <th colspan="8" style="background-color: rgb(97, 93, 198);">TIME TABLE</th>
+      </tr>
+
+      <tr style="background-color: plum;">
+        <th>DAYS</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th rowspan="7" style="background-color: chartreuse;">lunch break</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+      </tr>
+      <tr >
+        <td>MONDAY</td>
+        <td>Accounts</td>
+        <td>English</td>
+        <td>Statistics</td>
+        <td>Banking</td>
+        <td style="background-color: white"></td><!--empty cell-->
+        <td align="center">-</td>
+      </tr>
+      <tr>
+        <td>TUESDAY</td>
+        <td>Statistics</td>
+        <td>Banking</td>
+        <td>English</td>
+        <td>Accounts</td>
+        <td align="center">-</td>
+        <td align="center">-</td>
+      </tr>
+      <tr>
+        <td>WEDNESDAY</td>
+        <td>English</td>
+        <td>Statistics</td>
+        <td>Accounts</td>
+        <td align="center">EP</td>
+        <td>Banking</td>
+        <td align="center">-</td>
+      </tr>
+      <tr>
+        <td>THURSDAY</td>
+        <td align="center">-</td>
+        <td align="center">CA</td>
+        <td>Statistics</td>
+        <td>English</td>
+        <td align="center">EP</td>
+        <td align="center">-</td>
+      </tr>
+      <tr>
+        <td>FRIDAY</td>
+        <td>Banking</td>
+        <td>Statistics</td>
+        <td>English</td>
+        <td colspan="2" align="center">ICT</td>
+        <td align="center">CA</td>
+      </tr>
+      <tr>
+        <td>SATURSDAY</td>
+        <td>Banking</td>
+        <td align="center">CA</td>
+        <td>Statistics</td>
+        <td colspan="2" align="center">English</td>
+        <td>Accounts</td>
+      </tr>
+    </table> 
+         
+<h2>Table with nth-child(even/odd) selector</h2><table id="LastTable"    border="" cellspacing="0" width="600px">
+   <tr><!--nth-child(even) makes even rows light green-->
+<tr>
+  
+  <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>ID number</th>
+        <th>Gender</th>
+      </tr>
+      <tr >
+        <td>col 1</td>
+        <td>col 2</td>
+        <td colspan="2">col 3 and 4</td><!--colspan combined cells (cols 3 and 4 into one cell) מיזוג תאים באמצעות colspan-->
+        <td>col 5</td>
+       
+      </tr>
+    <tr>
+      <td>Dani</td>
+      <td>Coen</td>
+      <td>30</td>
+      <td>303989876</td>
+      <td>male</td>
+    </tr>
+    <td>Oded</td>
+    <td>Zaguri</td>
+    <td>25</td>
+    <td>303989877</td>
+  <td>male</td></tr>
+     <tr>
+      <td>Tamir</td>
+      <td>Gonen</td>
+      <td>40</td>
+      <td>303989875</td>
+      <td>male</td>
+    </tr>
+    <td>Alis</td>
+    <td>Dahan</td>
+    <td>27</td>
+    <td>303989874</td><td>female</td>
+    </table>
+  </body>
+</html>
+
+
+
+         
+          
+          
+          
+          
+
+        
+          
+          
+       
+  

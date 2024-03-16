@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex items</title>
+    <style>
+      /*flex-item allow us to control the order of the flex items and control them separately*/
+      .main {
+        max-width: 900px;
+        height: 250px;
+        background-color: silver;
+        display: flex;
+      }
+      .main div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex items</h1>
+    <h2>
+      flex-item allow us to control the order of the flex items and control them
+      separately / order by default in elements = zero(0)
+    </h2>
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <h2>order / with positive value</h2>
+    <div class="main">
+      <div style="order: 2; background-color: yellow">1</div>
+      <div style="order: 3; background-color: blueviolet">2</div>
+      <div style="order: 1; background-color: aqua">3</div>
+      <!--order by default in elements is  zero-0--><!--order with "1" places the element at the end of the flex container-->
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+
+    <h2>order with negative value</h2>
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div style="order: -1; background-color: aqua">3</div>
+      <!--order with "-1" places the element at the start of the flex container-->
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <h2>align-items: center</h2>
+    <div class="main" style="align-items: center">
+      <div>1</div>
+      <div style="background-color: blue">2</div>
+      <div style="background-color: blueviolet">3</div>
+      <div>4</div>
+    </div>
+    <h2>align-self: flex-start</h2>
+    <div class="main" style="align-items: center">
+      <div>1</div>
+      <div style="align-self: flex-start; background-color: blue">2</div>
+      <div style="background-color: blueviolet">3</div>
+      <div>4</div>
+    </div>
+    <h2>align-self: flex-end</h2>
+    <div class="main" style="align-items: center">
+      <div>1</div>
+      <div style="background-color: blue">2</div>
+      <div style="align-self: flex-end; background-color: blueviolet">3</div>
+      <div>4</div>
+    </div>
+    <h2>flex-basis</h2>
+    <!--flex basis refers to the initial size of the flex item-->
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br /><br />
+    <div class="main">
+      <div style="flex-basis: 500px">1</div>
+      <div style="flex-basis: 100px">2</div>
+      <div style="flex-basis: 100px">3</div>
+    </div>
+    <h2>flex-grow</h2>
+    <!--flex-grow refers to the ability of the control on  the flex item to grow relative to oher items-->
+    <div class="main">
+      <div></div>
+      <div></div>
+    </div>
+
+    <h2>1:2</h2>
+    <div class="main">
+      <div style="flex-grow: 1"></div>
+      <div style="flex-grow: 2"></div>
+    </div>
+
+    <h2>1:9</h2>
+    <div class="main">
+      <div style="flex-grow: 1"></div>
+      <div style="flex-grow: 9"></div>
+    </div>
+
+    <!--ברירת מחדל כאן 0-->
+    <!--flex-grow: 2 grows twice to fill the remaining space in the container-->
+
+    <h2>1:2:3</h2>
+    <div class="main">
+      <div style="flex-grow: 1; background-color: rgb(244, 225, 24)"></div>
+      <div style="flex-grow: 2; background-color: rgb(11, 179, 17)"></div>
+      <div style="flex-grow: 3; background-color: rgb(78, 49, 220)"></div>
+    </div>
+    <h2>flex shrink</h2>
+    <!--אחראי על כיווץ - הפוך מflex-grow-->
+    <div class="main">
+      <div
+        style="
+          flex-shrink: 1;
+          flex-basis: 300px;
+          background-color: rgb(240, 41, 41);
+        "
+      ></div>
+      <div
+        style="
+          flex-shrink: 2;
+          flex-basis: 300px;
+          background-color: rgb(226, 43, 171);
+        "
+      ></div>
+      <div
+        style="
+          flex-shrink: 3;
+          flex-basis: 300px;
+          background-color: rgb(43, 183, 226);
+        "
+      ></div>
+    </div>
+  </body>
+</html>

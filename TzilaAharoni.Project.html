@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project/Tzila_Aharoni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+      .box {
+        border: 5px solid hsl(0, 5%, 7%);
+        padding: 10px;
+        margin: 10px;
+      }
+    
+      #more {
+        display: none;
+      }
+    </style>
+    <img src="happy.PNG" />
+
+    <style>
+      img {
+        width: 110px;
+        border-radius: 100px;
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+    <style>
+      body {
+        background-image: url("37a38f5919cb66598a387a24d3e0f0fc.jpg");
+        background-repeat: no-repeat, repeat;
+        height: 730px;
+        background-position: center;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-size: cover;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>My first project</h1>
+      <h4>"When you do what you love it brings you endless happiness"</h4>
+      
+        <p style="color: rgb(47, 5, 233)">Author: Tzila&nbsp;<span>Aharoni</span></p>
+      <p style="color: rgb(255, 47, 175);">zilaalkobi@gmail.com</p>
+      <a href="https://www.hackeru.co.il">link to hackeru website</a>
+    </div>
+    <br>
+    
+
+    <script>
+
+       //Ex1
+      /*
+קבל מהמשתמש מספר: ניתן לצאת מנקודת הנחה שהמשתמש יקיש מספר חיובי
+אם המספר בטווח שבין 0 ל 100 הדפס "small "
+אם המספר בטווח שבין 101 ל 1000 הדפס "medium"
+אם המספר גדול מ 1000 הדפס "large"*/
+console.log("---Ex1---");
+function getSizeNumber() {
+     var sizeNumber = prompt("Enter size");
+     sizeNumber = Number(sizeNumber);
+
+     if (sizeNumber<=100) {
+        alert("small");
+        console.log("small");
+     } else if (sizeNumber>=101 && sizeNumber<=1000) {
+        alert("medium");
+        console.log("medium");
+     } else if (sizeNumber>1000) {
+        alert("large");
+        console.log("large");
+     }
+    }
+    getSizeNumber()
+    
+    
+      //Ex2
+       /*
+       קבל מהמשתמש שם פרטי ושם משפחה.
+הדפס למשתמש את ההודעה: "שלום )שם פרטי( )שם משפחה(, ברוך שובך למערכת".
+לדוגמה, אם המשתמש הקיש "גל" ו "לביא" יודפס לו ההודעה "שלום גל לביא, ברוך שובך למערכת"*/
+console.log("---Ex2---");
+     function customerLogin() {
+        var getName1 = prompt("Please enter your first name");
+        var firstName = String(getName1);
+        var getName2 = prompt("Please enter your last name");
+        var lastName = String(getName2);
+        if (firstName == "Tzila" && lastName == "Aharoni") {
+            alert("Hello" + " " + firstName + " " + lastName + "!" + " " + "Welcome back to the system");
+            console.log("Hello" + " " + firstName + " " + lastName + "!" + " " + "Welcome back to the system");
+        } else {
+            alert("Sorry, you are not our customer");
+            console.log("Sorry, you are not our customer");
+        }
+
+     }
+     customerLogin()
+
+      //Ex3 
+      /*
+      קבל מהמשתמש סיסמה למערכת.
+במידה והסיסמה הינה "123456hackeru ", הדפס למשתמש את ההודעה "הזיהוי בוצע בהצלחה".
+אחרת הדפס "הסיסמה שגויה, יש צורך בזיהוי"*/
+console.log("---Ex3---")
+function login() {
+    var userPassword = prompt("Please enter your password");
+    if (userPassword =="hackeru123456") {
+        alert("The identification was performed successfully!");
+        console.log("The identification was performed successfully!");
+    } else {
+        alert("The password is incorrect! Identification is required");
+        console.log("The password is incorrect! Identification is required")
+    }
+}
+      
+     login()     
+      
+      //Ex4 
+      /*
+      קבל מהמשתמש גיל.
+ במידה וגילו מתחת לגיל 16 )לא כולל(, יש לרשום למשתמש "אינך מורשה להיכנס"
+ במידה וגילו בין -16 18 )כולל(, יש לרשום "אתה רשאי להיכנס באישור הורה"
+ במידה וגיל מעל גיל 18 רשום משתמש "אתה מוזמן להצטרף"*/
+console.log("---E4---")
+     
+       function yourAge() {
+        var age = prompt("Please enter your age");
+        age = Number(age);
+
+        if (age<16) {
+            alert("You are not authorized to enter");
+            console.log("You are not authorized to enter");
+        } else if (age>=16 && age <=18) {
+            alert("You may enter with parental permission");
+            console.log("You may enter with parental permission");
+        } else if (age>18) {
+            alert("You are welcome to join");
+            console.log("You are welcome to join");
+        }
+      }
+      yourAge()
+     
+      //Ex5 
+      /*
+      קבל מהמשתמש 3 מספרים כמו כן בקש את אחד מהתווים הבאים: "+" או "-" . )פלוס או מינוס(
+במידה והקיש "+" , יש להדפיס את תוצאת החיבור של 3 המספרים.
+במידה והקיש "–" , יש להדפיס את תוצאת החיסור של 3 המספרים*/
+console.log("---Ex5---")
+ function calculator() {
+    var number1 =Number(prompt("Please enter your first number"));
+    var number2 =Number(prompt("Please enter your second number"));
+    var number3 =Number(prompt("Please enter your third number"));
+    var operator = prompt("Please enter the operator ( + or - )");
+    //Saving the result
+    var result;
+
+    if (operator== "+") {
+        result = number1 + number2 + number3;
+        alert("result:" + " " + result);
+        console.log("result:" + " " + result);
+    } else if (operator == "-") {
+        result = number1-number2-number3;
+        alert("result:" + " " + result);
+        console.log("result:" + " " + result);
+    }   else {
+        result = "Invalid operator!";
+        alert("result:" + " " + result);
+        console.log("result:" + " " + result);
+    }
+ }
+ calculator() 
+      
+    //Bonus task
+    /*
+    משימת בונוס – 5 נקודות
+עצב את המסמך הבחינה תוך שימוש בכמה שיותר מפקודות שנלמדו בכיתה*/
+    </script>
+     </div>
+
+    <!--Content-->
+    <div class="box">
+      <h3>Some information about me...</h3>
+      
+    <p style="color: black">
+      <span id="dots"></span
+      ><span id="more"
+        >First name + last name:<br />Tzila Aharoni<br /><br />A phone number
+        where you are available if I have a question:<br />0528173211<br /><br />What
+        was the most complex thing in the project?:<br />To me, there were no
+        complex things in the project. I enjoyed doing the task<br /><br />What
+        was the thing you enjoyed the most during the project phase?:<br />I
+        enjoyed exploring, learning and discovering new things because it's like
+        art to create something with your own hands<br /><br />Is the field
+        suitable for me and if so why do I think the field suits me?:<br />I
+        consider myself a creative person. The world of design really speaks to
+        me. I was born into a family of photographers and I think I got
+        creativity in my DNA<br /><br />How do I summarize the sorting phase? On
+        a personal note:<br />It was simply amazing in such a short time to get
+        so much knowledge delivered by a very professional lecturer
+      </span>
+    </p>
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+    </div>
+    <br>
+     <div class="box">
+      <h2 style="color: red">My exercises buttons:</h2>
+         
+    <button onclick = "getSizeNumber()" style="color: red;"> Ex-1</button>
+    <button onclick = "customerLogin()" style="color: green;"> Ex-2</button>
+    <button onclick = "login()" style="color: blue;"> Ex-3</button>
+    <button onclick = "yourAge()" style="color: rgb(255, 123, 0);"> Ex-4</button>
+    <button onclick = "calculator()" style="color: rgb(86, 21, 190);"> Ex-5</button>
+    </div>
+  </body>
+  
+</html>

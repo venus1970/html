@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css styles</title>
+    <style>
+      p {
+        color: blue !important;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+      }
+      /*use !important to override p styles for #bg - דורס את הקוד*/
+      #bg {
+        color: red;
+        background-color: lightblue;
+      }
+      /*class example*/
+      .bg {
+        color: green;
+        background-color: yellow;
+      }
+      /*id example*/
+      #bg1 {
+        color: purple;
+        background-color: pink;
+      }
+    </style>
+
+    <!-- External CSS style sheet works on all paragraphs in the body - actually this is a disadvantage if we will want to style only specific paragraph/element later and there we will need to use internal or inline CSS  for e.g. id selector: <p id="bg" and after that in head section we need define hush #bg with attributes that we wants> -->
+    <!--bg=background color, tc=text color etc. -->
+    <!-- Add a new paragraph with id="bg" and styles defined in head -->
+    <!--Meaning of hush (#) to refer to the id we defined earlier andactivate the design only on one specific element separately-->
+  </head>
+  <body>
+    <h1 style="background-color: aquamarine; text-align: center">
+      Css styles with Oded Buchris
+    </h1>
+    <h2 class="bg bg1">paragraph 1</h2>
+    <!--דוגמה להגדרת 2 קלסים-->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius neque quo
+      tenetur at vitae veniam facere qui fuga, distinctio magnam harum id
+      aspernatur esse nesciunt porro numquam consequuntur voluptatibus!
+      Voluptate maxime non ea veritatis nemo qui perferendis magnam dolorem
+      ratione ullam accusantium labore laborum ducimus voluptatem natus ex nisi
+      atque officia rem esse, excepturi exercitationem. Exercitationem sed
+      illum, quod natus rerum architecto id recusandae doloribus beatae mollitia
+      eligendi eaque veritatis officiis fugiat repellendus accusantium ea
+      numquam. Architecto nisi dignissimos blanditiis dicta tempore. Maiores,
+      corporis aliquid natus aspernatur vero dolorem! Eos, impedit? Provident
+      laborum qui ut rerum accusantium. Neque, laborum eos?
+    </p>
+    <h2>paragraph 2</h2>
+    <p></p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quisquam eos
+      nulla repudiandae fugiat doloribus doloremque molestiae pariatur modi
+      dolore, dolores sapiente illo maxime impedit odio quaerat eum natus
+      reiciendis ratione in cupiditate optio excepturi incidunt. Cumque eveniet
+      ab eaque sit aperiam blanditiis, saepe totam, consequatur neque voluptate
+      quas, dignissimos quasi sint sed. Minima aut magni, molestiae omnis
+      repellendus aliquid, eos porro saepe facilis ex, voluptatem nihil corporis
+      quasi. Qui ea soluta animi beatae porro mollitia facilis, maxime maiores?
+      Culpa corrupti qui autem maxime cumque voluptate tempore quam deleniti
+      vitae, est ad corporis velit fugit quia itaque quis error repellat?
+    </p>
+    <h2 class="bg" id="bg1">paragraph 3</h2>
+    <!--ניתן להוסיף לאלמנטים סגנונות נוספים באמצעות קלאס או id וגם לשלב את class ו-id ביחד-->
+    <!-- אם זה קשור לעיצוב אחר אפשר גם לתת 2 קלאסים ביחד לאותו אלמנט-->
+    <p id="bg">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione officia
+      libero minus illum quasi nam cum, nostrum delectus tenetur! Accusamus
+      corrupti vel dolor laudantium, magni non delectus tenetur beatae. Natus
+      repellat exercitationem assumenda expedita quidem impedit iusto magni quam
+      consequatur dignissimos quis minima sint ut quae facilis, quas architecto
+      eligendi, error eaque recusandae et laborum qui quod odit. Iure quibusdam
+      culpa iusto quidem sequi tempora commodi minus veritatis qui placeat
+      sapiente dolor quos, aspernatur assumenda eligendi aut vitae quis
+      incidunt. Molestiae dolor ea, commodi at debitis fuga aliquid ut aut
+      maiores, officia itaque ratione earum distinctio sint, eligendi inventore
+      sed.
+    </p>
+    <h2>paragraph 4</h2>
+    <p></p>
+    <p class="bg">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione officia
+      libero minus illum quasi nam cum, nostrum delectus tenetur! Accusamus
+      corrupti vel dolor laudantium, magni non delectus tenetur beatae. Natus
+      repellat exercitationem assumenda expedita quidem impedit iusto magni quam
+      consequatur dignissimos quis minima sint ut quae facilis, quas architecto
+      eligendi, error eaque recusandae et laborum qui quod odit. Iure quibusdam
+      culpa iusto quidem sequi tempora commodi minus veritatis qui placeat
+      sapiente dolor quos, aspernatur assumenda eligendi aut vitae quis
+      incidunt. Molestiae dolor ea, commodi at debitis fuga aliquid ut aut
+      maiores, officia itaque ratione earum distinctio sint, eligendi inventore
+      sed.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class & id</title>
+    <style>
+      .clr {
+        color: blue;
+
+        font-size: 30;
+      }
+      .clr-red {
+        color: red;
+      }
+      #clr-red {
+        color: red;
+      }
+      a:hover {
+        background-color: yellow;
+      }
+      h1:hover {
+        background-color: blue;
+        color: white;
+      }
+      h3:hover {
+        background-color: yellow;
+      }
+      /* Styles the heading when hovered */
+    </style>
+  </head>
+  <body>
+    <h1>class & id</h1>
+    <h2 class="clr">Paragraphs with class and id</h2>
+    <h3>lesson with Oded</h3>
+    <p class="clr" id="clr-red">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, cupiditate
+      quibusdam nulla natus placeat praesentium ratione delectus velit harum
+      error officia repellendus voluptatibus voluptatum ex facere libero, quos
+      deserunt veritatis?
+    </p>
+    <!--if we want to style this speciic paragraph in red color, we can add id-->
+    <p class="clr">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, repellat.
+    </p>
+    <p class="clr clr-red">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi est
+      repudiandae enim voluptatum mollitia dignissimos temporibus minus
+      distinctio atque eaque, nihil laboriosam error exercitationem quidem ea
+      commodi fuga provident omnis?
+    </p>
+    <!--if we want to style this speciic paragraph in red color, we can add or id or additional class="clr-red" --><!--יכולנו במקרים הללו גם להשתמש בשיטת internal css"inline" אבל לפעמים יש לנו קוד ארוך של 1000 שורות ולא יהיה יעיל לחפש את השורה בין 1000 שורות של קוד לכן נעדיף הוספת id/class/additional class-->
+    <button class="clr-red">click1</button>
+    <button class="clr-red">click2</button>
+    <button class="clr-red">click3</button
+    ><!--clr=color class for styling-->
+    <ul>
+      <li class="clr">pomela</li>
+      <li class="clr">apple</li>
+      <li class="clr">banana</li>
+      <li class="clr">orange</li>
+    </ul>
+    <br />
+    <ul>
+      <!--css styles for lists for chaining marker styles-->
+      <li class="clr" style="list-style-type: square">pomela</li>
+      <li class="clr" style="list-style-type: lower-latin">apple</li>
+      <li class="clr" style="list-style-type: upper-roman">banana</li>
+      <li class="clr" style="list-style-type: upper-alpha">orange</li>
+    </ul>
+    <br />
+    <ol style="list-style-type: georgian">
+      <li class="clr">pomela</li>
+      <li class="clr">apple</li>
+      <li class="clr">banana</li>
+      <li class="clr">orange</li>
+      <li style="list-style-type: disc">cherry</li>
+      <!--there is no classs defined for cherry-->
+      <!--(li.clr*3 TAB) short way to add class clr to 3 list items-->
+    </ol>
+    <!--first we define color class for some elements -->
+    <br />
+    <h1>Demo of the :hover selector</h1>
+
+    <p>The :hover selector style links on mouse-over:</p>
+
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="https://www.wikipedia.org">wikipedia.org</a>
+  </body>
+</html>

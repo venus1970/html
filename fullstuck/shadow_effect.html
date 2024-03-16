@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow</title>
+    <style>
+      div {
+        width: 600px;
+        height: 100px;
+      }
+
+      #shadow1 {
+        box-shadow: 10px 10px 5px #888888;
+        background-color: tomato;
+      } /*10px=horizontal,10px=vertical,5px=blur,888888=color*/
+
+      #shadow2 {
+        box-shadow: 5px 5px 15px 20px #888888;
+        background-color: rgb(59, 208, 89);
+        margin-top: 100;
+      } /*5px=horizontal,5px=vertical,5px=blur,5px=spread,888888=color*/
+      #shadow3 {
+        box-shadow: 10px 10px 15px #ec81c3;
+        background-color: lightblue;
+        margin-top: 100;
+      } /*with another color*/
+      #shadow4 {
+        box-shadow: -10px -10px 15px #ec81c3;
+        background-color: lightblue;
+        margin-top: 100;
+      } /*with negative value on x and y axis*/
+      #textshadow {
+        text-shadow: 5px 5px gray;
+        margin-top: 100;
+      }
+      /*5px=horizontal,5px=vertical,5px=blur,888888=color*/
+      #textshadow1 {
+        text-shadow: 8px 10px rgb(247, 127, 7);
+        margin-top: 100;
+      }
+      #textshadow2 {
+        text-shadow: -8px -10px rgb(247, 127, 7);
+        margin-top: 100;
+      }
+      #textshadow3 {
+        text-shadow: 3px 3px gray;
+        margin-top: 100;
+      }
+      p {
+        font-size: larger;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      /*-8px=horizontal,-10px=vertical/negative values*/
+      hr.gradient {
+        height: 3px;
+        border: none;
+        border-radius: 6px;
+        background: linear-gradient(
+          90deg,
+          rgba(13, 8, 96, 1) 0%,
+          rgba(9, 9, 121, 1) 21%,
+          rgba(6, 84, 170, 1) 51%,
+          rgba(0, 255, 113, 1) 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shadow effect</h1>
+    <hr class="gradient" />
+    <h2 style="color: red">demo 1</h2>
+    <h3>
+      box-shadow: 10px 10px 5px #888888;
+      /*10px=horizontal,10px=vertical,5px=blur,888888=color*/
+    </h3>
+
+    <div id="shadow1"></div>
+    <br />
+    <br />
+    <h2 style="color: red">demo 2</h2>
+    <h3>
+      box-shadow: 5px 5px 15px 20px #888888; margin-top: 100;
+      /*5px=horizontal,5px=vertical,5px=blur,5px=spread,888888=color*/
+    </h3>
+
+    <div id="shadow2"></div>
+    <br />
+    <br />
+
+    <h2 style="color: red">demo 3/with another color of shadow:</h2>
+    <h3>
+      box-shadow: 5px 5px 15px 20px #ec81c3; margin-top: 100;
+      /*5px=horizontal,5px=vertical,5px=blur,5px=spread,888888=color*/
+    </h3>
+
+    <div id="shadow3"></div>
+    <br /><br />
+
+    <h2 style="color: red">demo 4/with negative value on x and y axis:</h2>
+    <h3>box-shadow: -10px -10px 15px #ec81c3</h3>
+
+    <div id="shadow4"></div>
+    <br /><br />
+    <hr class="gradient" />
+
+    <h2 style="color: red">demo 5: text shadow:</h2>
+
+    <h1 id="textshadow" style="color: blue">Hello, I am text shadow</h1>
+    <br /><br />
+    <hr class="gradient" />
+    <h2 style="color: red">demo 6: deepper text shadow:</h2>
+
+    <h1 id="textshadow1" style="color: blue">Hello, I am text shadow</h1>
+    <br /><br />
+    <hr class="gradient" />
+    <h2 style="color: red">
+      demo 7: text shadow with nagative value on x and y axis:
+    </h2>
+
+    <h1 id="textshadow2" style="color: blue">Hello, I am text shadow</h1>
+    <br /><br />
+    <hr class="gradient" />
+    <h2 style="color: red">demo 8: text shadow on paragraph:</h2>
+
+    <p id="textshadow3" style="color: blue">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam provident,
+      odio vitae ab possimus soluta dolores sit porro. Mollitia animi nobis
+      consequuntur itaque sunt. Veritatis, laboriosam et, vero voluptatem magni
+      natus quam recusandae facilis aperiam deserunt enim. Repellendus earum
+      itaque ea officiis facere pariatur, doloremque numquam, est porro repellat
+      odit suscipit laborum obcaecati, natus mollitia quaerat modi molestiae
+      delectus. Ea, corrupti rem? Minus dignissimos, reiciendis ea nisi aliquam
+      quasi sunt incidunt vitae a explicabo. Debitis, porro? Beatae, illo! Est
+      quae et assumenda consequatur consectetur expedita, id animi adipisci
+      quasi ratione. Aspernatur animi exercitationem reprehenderit nobis aliquid
+      voluptatem excepturi velit numquam.
+    </p>
+    <br /><br />
+    <hr class="gradient" />
+  </body>
+</html>

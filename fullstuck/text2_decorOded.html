@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ttext decoration 2</title>
+    <style>
+      #demo1 {
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 10px; /*Increase space between letters*/
+        line-height: 40px; /*Increase space between lines*/
+        word-spacing: 10px; /*Increase space between words*/
+        text-align: center; /*Center text*/
+        font-weight: 700; /*Increase font weight*/
+        color: blue; /*Change text color*/
+      } /*properties: font-family, letter-spacing, line-heght, word-spacing, text-align, font-weight, font-style, font-size*/
+      #demo2 {
+        line-height: 1.4em; /*em=element is unit of font-size in css*/
+        font-size: 2rem; /* rem=root element is unit of font-size in css*/
+
+        /*Px - is permanent unit and here we have problem with responsivity. So for responsivity we use css units: em/rem/ */
+        /*rem relative to root font-size and em relative to current font-size of element*/
+        text-align: justify; /*align text to both left and right - אישור של הטקסט מ2 צדדים*/
+        /*text-align:right'left'center'justify*/
+        font-style: italic; /*font-style propeties:normal'italic*/
+      }
+      h2 {
+        text-decoration: underline;
+      }
+      #title {
+        text-decoration: overline;
+      }
+      #title1 {
+        text-decoration: overline underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text decoration</h1>
+    <h2 style="color: green">demo1</h2>
+
+    <p id="demo1" dir="rtl">
+      לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון
+      ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל
+      אאוגו וסטיבולום סוליסי טידום בעליק. קונסקטורר אדיפיסינג אלית. סת אלמנקום
+      ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת
+      לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה,
+      נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
+    </p>
+    <hr />
+    <h2 style="color: brown">demo2</h2>
+    <p id="demo2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro
+      consequatur eveniet sint et, quia autem neque deserunt soluta enim quas
+      omnis voluptate veritatis corrupti, ab, aspernatur error! Soluta, ea.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+      accusantium error quae saepe rerum praesentium earum. Minima culpa, error
+      dignissimos magni maiores accusamus architecto, qui voluptatum inventore
+      odit, eveniet enim? This paragraph has an underline text decoration. Lorem
+      ipsum dolor, sit amet consectetur adipisicing elit. Corporis est ex atque
+      non enim inventore, ad tempora, quas voluptas odio reprehenderit et dolor
+      similique accusamus porro, quia voluptatem vel? Voluptate.
+    </p>
+    <hr />
+    <h2 id="title" style="color: blue">demo3</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro
+      consequatur eveniet sint et, quia autem neque deserunt soluta enim quas
+      omnis voluptate veritatis corrupti, ab, aspernatur error! Soluta, ea.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+      accusantium error quae saepe rerum praesentium earum. Minima culpa, error
+      dignissimos magni maiores accusamus architecto, qui voluptatum inventore
+      odit, eveniet enim? This paragraph has an underline text decoration. Lorem
+      ipsum dolor, sit amet consectetur adipisicing elit. Corporis est ex atque
+      non enim inventore, ad tempora, quas voluptas odio reprehenderit et dolor
+      similique accusamus porro, quia voluptatem vel? Voluptate.
+    </p>
+    <hr />
+    <h2 id="title1" style="color: rgb(255, 4, 0)">demo4</h2>
+    <p style="text-decoration: line-through">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro
+      consequatur eveniet sint et, quia autem neque deserunt soluta enim quas
+      omnis voluptate veritatis corrupti, ab, aspernatur error! Soluta, ea.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+      accusantium error quae saepe rerum praesentium earum. Minima culpa, error
+      dignissimos magni maiores accusamus architecto, qui voluptatum inventore
+      odit, eveniet enim? This paragraph has an underline text decoration. Lorem
+      ipsum dolor, sit amet consectetur adipisicing elit. Corporis est ex atque
+      non enim inventore, ad tempora, quas voluptas odio reprehenderit et dolor
+      similique accusamus porro, quia voluptatem vel? Voluptate.
+    </p>
+    <!--properties of style=text-decoration: underline,overline,underline overline,line- through-->
+  </body>
+</html>

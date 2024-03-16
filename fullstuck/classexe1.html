@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML lesson</title>
+    <meta charset="UTF-8" />
+    <!--meta charset=Utf-8 אחראי על קידוד-->
+    <!--אחרת מתקבל ג'יבריש-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      h1 {
+        color: red;
+        font-size: 300%;
+        font-family: sans-serif;
+      }
+      h2 {
+        color: green;
+        font-size: 150%;
+        font-family: verdana;
+      }
+      p {
+        color: blue;
+      }
+      h3 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Niconne', cursive;
+  color: #4949eb;
+  text-shadow: 2px 2px 0px  #957dad,
+               4px 4px 0px #ee4b2b,
+               6px 6px 0px #00c2cb,
+               8px 8px 0px #ff7f50,
+               10px 10px 0px #553c9a;
+}
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center; border-style: dashed; background-color: rgb(255, 255, 142)">
+    <h1>HTML lesson  with Oded Buchris</h1>
+    <h2>Zila Aharoni project</h2>
+    </div>
+    <h3 style="color: blue;">My favorite drinks :</h3>
+    <img src="/Images/orange juice(2).jpeg" height="150" width="150">
+    <img src="/Images/water.jpg" height="150" width="150">
+    <img src="/Images/milk (2).jpeg" height="150" width="150">
+ <img src="/Images/coffee.jpeg" height="150" width="150">
+  <img src="iced coffee.jpeg" height="150" width="150">
+    <img src="tea.jpeg" height="150" width="150">
+    <img src="coca-cola.jpeg" height="150" width="150">
+ <img src="energy drink.jpeg" height="150" width="150">
+<h2>An ordered HTML list divided in 2 columns:</h2>
+<!--an ordered html list-->
+<ol style="columns: 2;">
+  <li>Coffee</li>
+  <li>Orange juice</li>
+  <li>Milk</li>
+  <li>Water</li>
+<li>Coca-cola</li>
+<li>Energy drink</li>
+<li>Tea</li>
+<li>Iced coffee</li>
+
+</ol>
+<h2>An unordered HTML list divided in 2 columns:</h2> 
+<!--an unordered html list-->
+<ul style="columns: 2;">
+  <li>Coffee</li>
+  <li>Orange juice</li>
+  <li>Milk</li>
+  <li>Water</li>
+  <li>Coca-cola</li>
+<li>Energy drink</li>
+<li>Tea</li>
+<li>Iced coffee</li>
+  </ul>
+<h2>Use CSS to display squares instead of bullets:</h2>
+<ul style="
+list-style-type:square
+; color: red; columns: 2">
+  <li>Coffee</li>
+  <li>Orange juice</li>
+  <li>Milk</li>
+   <li>Water</li>
+  <li>Coca-cola</li>
+<li>Energy drink</li>
+<li>Tea</li>
+<li>Iced coffee</li>
+</ul>
+<h2>Make a description of each term in the description list:</h2>
+<dl>
+  <dt>Coffee</dt>
+  
+<dd>
+- black hot drink
+</dd>
+
+  <dt>Milk</dt>
+  
+<dd>
+- white cold drink
+</dd>
+
+</dl>
+<!--A nested list - רשימה בתוך הרשימה-->
+  <h2>A Nested List:</h2>
+<p>Lists can be nested <mark>(list inside list)</mark>:</p>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+<!--li*5 TAB -על מנת לחסוך בזמן כתיבה -
+  במקום * אפשר SHIFT 8=*
+  LI/ SHIFT8 /מס' פעמים /TAB
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li-->
+<h2>Image from external source</h2>
+<!--הטמעת תמונות ממקור חיצוני
+>בוחרים תמונה באינטרנט >לוחצים עליה עכבר ימני>copy image address>עושים paste בין הגרשיים של src
+-->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8z_s05CS_0BYvAJPbrTIfm0XPKFnY4HBA8p9NLmtTrrIe44hOG1RmNV52a415UBItOEE&usqp=CAU" alt="hungarien parlament" width="30%" height="250">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zjWVqdb98VZIAAr-zL_WNLSjJYat7WKCzKjAIVnARHJHJYp0dNyY17FzmP9hgUgNG_8&usqp=CAU" alt="hungarien parlament" width="30%" height="250">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqEE5-wPRXf9UalvmUcaNE752UKfevgg_DOW0g-oFBf02LD1x-JXfzXk5hGrXPBmQhje4&usqp=CAU" alt="hungarien parlament" width="30%" height="250">
+<br><br>
+<h2>Image from internal source/from my folder</h2>
+<img src="shot.png" alt="screenshot" style="text-align: center">
+    <p style="text-decoration: line-through"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint maxime laboriosam ducimus odio recusandae eaque repellendus veritatis ipsum reiciendis, similique, ipsa vitae ullam et aliquid quos quibusdam eos, sed error aperiam obcaecati. Assumenda omnis, ut <del>quam cumque</del>  maiores consequatur autem quo ipsum sapiente repudiandae eveniet corporis rem veniam recusandae laboriosam ad. Dolores magnam eaque eligendi assumenda fuga perferendis alias mollitia commodi placeat ex rerum, non et, dignissimos corrupti <strong>eos? Praesentium, quibusdam</strong>  et ab amet quam illo cupiditate officia aliquid vero officiis ea quis hic incidunt ex fuga accusamus placeat natus reiciendis laboriosam, suscipit maxime perferendis. Voluptatem, excepturi aliquam!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum culpa fugiat necessitatibus voluptatum totam nesciunt at blanditiis porro, rem, modi odit quia repudiandae est dicta voluptas optio iure tenetur neque. Explicabo illo vitae quos rerum? Maiores quod excepturi perspiciatis perferendis laborum! Laboriosam totam blanditiis, vitae mollitia animi numquam et consequatur.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+      voluptatum aspernatur rem dolor nulla, quos deleniti iusto tempora,
+      molestias sapiente, nisi doloribus voluptas laudantium voluptatem vel
+      consequuntur aliquam ea voluptates!
+
+
+    </p>
+    <p dir="rtl">
+      לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית ליבם סולגק. בראיט ולחת
+      צורק מונחף, <br>ורמי מגמש. תרבנך וסתעד לכסתשם השמה <br>- לתכי מורגם בורק?
+      לתיג ישבעס.
+    </p>
+    <hr style="color: black"/>
+    <h3 style="text-align: center;">My pets :</h3>
+    
+     <img src="/Images/IMG-20231111-WA0010.jpg" height="150" width="100">
+    <img src="/Images/IMG-20231114-WA0007.jpg" height="150" width="100">
+    <img src="/Images/IMG-20231119-WA0002.jpg" height="150" width="190">
+ <img src="/Images/IMG-20231119-WA0005.jpg" height="150" width="100">
+  <img src="/Images/IMG-20231128-WA0015.jpg" height="150" width="180">
+  <img src="/Images/IMG-20231123-WA0004.jpg" height="150" width="180">
+  <br>
+  <h2>img rotate property</h2>
+  <img src="/Images/IMG-20231128-WA0015.jpg" height="150" width="180">
+  <img src="/Images/IMG-20231128-WA0015.jpg" height="150" width="180" style="rotate: 90deg">
+  <img src="/Images/IMG-20231128-WA0015.jpg" height="150" width="180" style="rotate: 30deg">
+   <br><br><br><br>
+   <img src="/Images/IMG-20231114-WA0007.jpg" height="150" width="100">
+    <img src="/Images/IMG-20231114-WA0007.jpg" height="150" width="180" style="rotate: 90deg">
+  <img src="/Images/IMG-20231114-WA0007.jpg" height="150" width="180" style="rotate: 30deg"> 
+    <br><br><br><br>
+     <hr style="color: black"/>
+  <h2>external link</h2>
+    <a href="https://www.google.co.il" target="_blank"><mark>click to google</mark></a>
+       <!--זהו בעצם קישור חיצוני שייפתח למשתמש בחלון חדש ואנו בדרך כלל לא נרצה לזרוק את המשתמש מהאתר על מנת שלא תפגע חוויית המשתמש-->
+    <h2>internal link</h2>
+    <a href="div_span.html"><mark>click to <span style="color: red">div_span</span> page</mark></a>
+    <marquee
+        direction="down"
+        width="100"
+        height="100"
+        behavior="alternate"
+        style="border:solid">
+        <marquee behavior="alternate">Moses</marquee>
+    </marquee>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nam molestias
+      iusto quibusdam corrupti, temporibus rerum quis neque rem impedit tempore
+      eaque quod unde aliquam ipsam in quidem nihil. Dolorem repudiandae optio
+      sed ab, libero nostrum itaque numquam mollitia unde aperiam voluptatem
+      dolor ducimus corrupti deserunt sequi. Quas corporis, aperiam ratione
+      beatae consequatur ea fugiat iure eum, aut ut aliquid exercitationem
+      suscipit numquam sed. Natus magnam obcaecati asperiores optio ratione
+      totam iste, repellendus, ipsum magni sequi voluptatibus pariatur. Eligendi
+      facere recusandae commodi, fugiat accusantium quam ipsum asperiores
+      magnam. Magni quis quasi, velit molestias atque culpa inventore sequi quam
+      recusandae consequuntur sapiente expedita eius possimus nemo quaerat sint
+      accusamus, dolorem illo esse, laborum labore excepturi vitae quae? Dicta
+      corporis a voluptates explicabo molestiae laboriosam, impedit vero. Vel
+      eveniet voluptas vero laborum harum cupiditate deleniti ducimus laboriosam
+      sunt? Modi accusamus in saepe rerum voluptas numquam repudiandae tenetur
+      porro doloremque autem illum eos maiores, totam dolores sunt minima aut
+      ipsum facere dicta, praesentium nihil incidunt. Delectus sapiente
+      reprehenderit, impedit minima laudantium error temporibus quod eos et
+      reiciendis adipisci minus placeat tenetur facilis ab magni esse. Ipsa
+      perferendis, dolore inventore neque voluptatibus voluptate deserunt,
+      officiis vitae unde necessitatibus sit magnam nisi, deleniti commodi
+      sapiente!
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, ea?
+      <h2 style="color: red;">Amazing places in the world</h2>
+      <img src="mean-Image.jpg" alt="places" width="150" height="150"> 
+      <img src="15-worlds-best-places-to-visit-03.jpg" width="150" height="150">
+      <img src="Amazing-Places-of-the-World-A-Must-See.jpg" width="150" height="150">
+      <img src="Santorini-Greece.jpg" alt="places" width="150" height="150">
+      <img src="pisa.png" alt="places" width="200" height="150">
+      <img src="Rio-de-Janeiro-s.jpg" alt="places" width="150" height="150">
+      <img src="rsz_alberta-amazing-attraction-417074_1.jpg" alt="places" width="150" height="150">
+       <img src="venice-italy-1024x576.png" alt="places" width="200" height="150">
+    </p>
+        <h1 style="color: blue">A Blue Heading (h1 repeats just for illustrate)</h1>
+
+    <p style="text-decoration: underline"><mark>A blue paragraph.</mark><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil laborum veniam perspiciatis impedit hic possimus deserunt? Temporibus nisi, asperiores dolores blanditiis quas in quisquam ad quod architecto perspiciatis? Corrupti distinctio fugit dignissimos maiores, consectetur voluptatibus adipisci optio porro eos harum ut consequuntur iure placeat repudiandae unde, voluptatum illum praesentium, suscipit iste pariatur culpa facilis alias! Iure rem cupiditate alias maiores voluptate quam facilis dicta atque dolores vero maxime sint placeat, nemo vel enim beatae dolorem perspiciatis magnam necessitatibus eius. Sit magnam delectus amet non est accusamus vero! Autem ducimus recusandae eaque eligendi est corporis cupiditate. Facere itaque reiciendis possimus quae hic eligendi, consequatur nobis nisi atque. Iure ducimus quo hic illo minus maxime sapiente fugiat nemo dolorem natus molestiae ex, non enim debitis tempora ea vel sit voluptate vero! Autem voluptatum sunt tempore accusantium voluptates animi placeat nemo iusto dolorem mollitia beatae alias qui quaerat error, nam unde ipsa quas, ullam, a eos assumenda. Explicabo iusto reiciendis, deleniti, ex animi molestias possimus et cum fugiat odit aliquam velit cumque illum aliquid id repellat voluptatibus consectetur excepturi at consequuntur officia doloribus, sunt vel. Consequuntur id odio inventore hic, consequatur aliquam asperiores quas vitae aspernatur, fugit nemo expedita accusamus quam pariatur quos! ipsum dolor sit amet consectetur, adipisicing elit. Velit amet fugit quibusdam mollitia excepturi, modi nobis omnis est autem eveniet odit hic minima beatae unde corrupti, voluptates vel eligendi? Cum.</p>
+  <h1>The img element (h1 repeats just for illustate)</h1>
+
+<img src="/Images/img_girl.jpg" alt="Girl in a jacket" width="200" height="250" style="border:5px solid black">
+ <img src="marilyn-monroe.jpg"width="200" height="250" style="border:5px solid rgb(241, 46, 166)" >
+ <br>
+ <br>
+ <h2>rounded images</h2>
+ <img src="/Images/img_girl.jpg" alt="Girl in a jacket" width="200" height="200" style="border:5px solid black; border-radius: 50%">
+ <img src="marilyn-monroe.jpg"width="200" height="200" style="border:5px solid rgb(241, 46, 166); border-radius: 50%" >
+ <br>
+ <br>
+ <h2>HTML *img* <mark>alt</mark> Attribute</h2>
+ <img src="/Images/img_girl.jpg" alt="Girl in a jacket" width="200" height="250" style="border: 5px solid black">
+ <img src="" alt="Girl in a jacket" width="200" height="250"  >
+<h2>vertical-align: bottom</h2>
+<p>This is some text. <img src="/Images/smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:bottom"> This is some text. This is some text. This is some text.
+</p>
+<h2>Word wrap setting</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores totam at, mollitia quasi sequi, tenetur ex harum sint, quod nemo earum sed soluta quam tempore quisquam! Iure repudiandae esse commodi, consequatur quo aspernatur architecto placeat reiciendis consequuntur dolorum modi obcaecati pariatur earum iusto ipsa illo libero non? Commodi, ut nihil. Dolore cum vel dolorum voluptate consequatur fugiat labore, itaque velit debitis placeat quas voluptas fugit dignissimos quibusdam modi ipsam optio. Consectetur, quisquam doloribus maxime deleniti quia recusandae reiciendis tempora itaque fugit esse facilis neque cum placeat porro, expedita eius commodi sunt suscipit sapiente! Magni tempora alias est ea optio.</p>
+<body>
+</html>

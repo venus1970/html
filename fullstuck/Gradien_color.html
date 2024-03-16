@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradien color</title>
+    <style>
+      h1 {
+        background-color: red;
+        text-align: center;
+      }
+
+      div {
+        width: 600px;
+        height: 300px;
+        margin-top: 20px;
+      }
+      #demo1 {
+        background-color: magenta;
+      }
+      #demo2 {
+        background: linear-gradient(to right, red, yellow, green, blue);
+      } /*הגדרה של כמה צבעים*/
+      #demo3 {
+        background: linear-gradient(to left, red, yellow, green, blue);
+      } /*הגדרה של כמה צבעים*/
+      #demo4 {
+        background: linear-gradient(to bottom, red, yellow, green, blue);
+      }
+      #demo5 {
+        background: radial-gradient(red, yellow, green, blue);
+      } /*הגדרה של מספר צבעים במעגל*/
+      #demo6 {
+        background: linear-gradient(to bottom right, red, yellow, green, blue);
+      } /*diagonal direction*/
+      #demo7 {
+        background: radial-gradient(red, yellow, green, blue);
+      } /*הגדרה של מספר צבעים במעגל*/
+      #demo8 {
+        background: repeating-radial-gradient(
+          red,
+          yellow 10%,
+          green 10%,
+          blue 20%
+        );
+      }
+      #demo9 {
+        background: repeating-linear-gradient(
+          red,
+          yellow 10%,
+          green 10%,
+          blue 20%
+        );
+      } /*reapiting colors*/
+      #demo10 {
+        background: linear-gradient(
+          to right,
+          rgba(197, 197, 205, 0),
+          rgb(85, 0, 255)
+        );
+      }
+      #demo11 {
+        height: 100px;
+        width: 600px;
+        background-color: red;
+        background-image: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gradien color</h1>
+    <h2>demo1</h2>
+    <div id="demo1"></div>
+    <h2>
+      demo2/ background: linear-gradient(to right, red, yellow, green, blue)
+    </h2>
+    <div id="demo2"></div>
+    <h2>demo3/ linear-gradient(to left, red, yellow, green, blue)</h2>
+    <div id="demo3"></div>
+    <h2>
+      demo4/ background: linear-gradient(to bottom, red, yellow, green, blue)/
+      <mark>to bottom = by default</mark>
+    </h2>
+    <!--to bottom = by default-->
+    <div id="demo4"></div>
+    <h2>demo5/ background: radial-gradient(red, yellow, green, blue)</h2>
+    <div id="demo5"></div>
+    <h2>
+      demo6/ diagonal direction/background: linear-gradient(to bottom right,
+      red, yellow, green, blue)
+    </h2>
+    <div id="demo6"></div>
+    <h2>demo7/ background: radial-gradient(red, yellow, green, blue)</h2>
+    <div id="demo7"></div>
+    <h2>
+      demo8/ background: reapeting-radial-gradient(red, yellow, green, blue)
+    </h2>
+    <div id="demo8"></div>
+    <h2>
+      demo9/ background: reapeting-linear-gradient(red, yellow, green, blue)
+    </h2>
+    <div id="demo9"></div>
+    <h2>
+      demo10/ linear-gradient transparency/ background: linear-gradient( to
+      right, rgba(197, 197, 205, 0), rgb(85, 0, 255) );
+    </h2>
+    <p>
+      To add transparency, we use the rgba() function to define the color stops.
+      The last parameter in the rgba() function can be a value from 0 to 1, and
+      it defines the transparency of the color: 0 indicates full transparency, 1
+      indicates full color (no transparency).
+    </p>
+
+    <!--To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency)-->
+    <div id="demo10"></div>
+    <h2>demo11/Rainbow Background</h2>
+    <div
+      id="demo11"
+      style="
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+      "
+    >
+      Rainbow Background
+    </div>
+  </body>
+</html>

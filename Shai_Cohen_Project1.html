@@ -1,0 +1,118 @@
+!DOCTYPE html>
+<html>
+<head>
+        <title>Shay Cohen's project</title>
+        <body style="background-color:#00ccff"></body>
+</head>
+<body>
+            
+   <h1>My project</h1>    
+<script>
+//EX1
+function getSizeNumber() {
+    var sizeNumber=prompt("place a number");
+    sizeNumber=Number(sizeNumber);
+    if (sizeNumber<=100) {
+        alert("small");
+        console.log("small");
+    } else if (sizeNumber>=101 && sizeNumber<=1000) {
+        alert("medium");
+        console.log("medium");
+    }else if (sizeNumber>=1001) {
+        alert("large");
+        console.log("large");
+    }
+}
+getSizeNumber()
+//EX2
+function login() {
+    var getName1= prompt("first name");
+    var firstName=String(getName1);
+    var getName2=prompt("last name");
+    var lastName=String(getName2);
+    if (firstName == "Shai" && lastName == "Cohen") {
+    alert("hello" + " " + firstName +" "+ lastNname + "!" + " "+ "You are welcome");
+    console.log("hello" +" " + firstNname +" "+lastName +"!"+ " " + "You are welcome");
+} else {
+    alert("sorry'you are not our client");
+    console.log("sorry'you are not our clientr");
+
+}
+}
+login()
+
+
+//EX3
+function pass () {
+    var pass=prompt("place your password");
+    if ( pass == "hackeru123456") {
+        alert("welcome");
+        console.log("welcome");
+    } else {
+        alert("not welcome");
+        console.log("not welcome");
+    }
+
+}
+pass()
+
+//EX4
+function userAge(){
+    var age =prompt("what is your age? :");
+    age=Number(age);
+    if(age<16){
+        alert("You can't get in");
+        console.log("You can't get in");
+    }else if(age >=16 && age<=18){
+        alert("You can enter only with parental permission");
+        console.log("You can enter only with parental permission");
+    }else if (age>18){
+        alert ("You can join");
+        console.log("You can join")
+    }
+
+}
+userAge()
+
+
+//EX5
+function calculator(){
+    var number1= Number(prompt("please enter your first number"));
+    var number2= Number(prompt("please enter your second number"));
+    var number3= Number(prompt("please enter your third number"));
+    var operator= prompt("please enter the operator (+ or - )");
+
+    var result;
+
+ if (operator == "+") {
+    result = number1 + number2 + number3;
+    alert()
+ } else if(operator == "-") {
+    result = number1-number2-number3;
+ } else {
+    result= "invalid operator";
+
+ }
+}
+calculator()
+
+
+
+
+
+
+</script>
+
+<br>
+    <button onclick="getSizeNumber()" style="color: chartreuse;">EX1</button>
+<br>
+    <button onclick="login()" style="color: rgb(255, 0, 251);"> EX2 </button>
+<br>
+    <button onclick="pass"()" style="color: rgb(47, 0, 255);">EX3</button>
+<br>
+    <button onclick="userAge()" style="color: rgb(212, 255, 0);">EX4</button>
+<br>
+    <button onclick="calculator()" style="color: rgb(0, 255, 76);">EX5</button>
+</body>
+
+</html>

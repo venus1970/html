@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align-item</title>
+    <style>
+      /*align-item responsible for y axis*/
+      /*flex-box responsible for x axis*/
+      .main {
+        background-color: silver;
+        max-width: 1024px;
+        display: flex;
+        height: 300px;
+        gap: 10px; /*gap means space between items in the container/ we put gap on the container and not on the elements in contrast to margin that we put on the elements*/
+      }
+      .child1 {
+        background-color: red;
+        width: 90px;
+        height: 110px;
+      }
+      .child2 {
+        background-color: green;
+        width: 120px;
+        height: 100px;
+      }
+      .child3 {
+        background-color: rgb(215, 96, 175);
+        width: 80px;
+        height: 140px;
+      }
+      .child4 {
+        background-color: rgb(69, 103, 195);
+        width: 80px;
+        height: 110px;
+      }
+      .child5 {
+        background-color: rgb(229, 243, 80);
+        width: 140px;
+        height: 90px;
+      }
+      /*baseline assist*/
+      /*In order to see the baseline better, we turned the "item" into a container and add "align-items:center", otherwise it would look like flex-start שnd stick up like in flex-start*/
+      .item {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Align-item</h1>
+    <h2>align-item/responsible for y axis</h2>
+    <div class="main">
+      <!--here defined 2 classes: item and child-->
+      <!--class item is responsible for the general settings of the items in contrast to child that is responsible for the settings of the children separately-->
+      <!--Any HTML element can have as many different classes as needed to style the element using CSS effectively.
+
+To assign multiple classes to a single HTML element, you need to specify each class name inside the class attribute separated with a blank space.-->
+      <div class="item child1">1</div>
+      <div class="item child2">2</div>
+      <div class="item child3">3</div>
+      <div class="item child4">4</div>
+      <div class="item child5">5</div>
+    </div>
+    <h2>align-item center</h2>
+    <div class="main" style="align-items: center">
+      <div class="item child1">1</div>
+      <div class="item child2">2</div>
+      <div class="item child3">3</div>
+      <div class="item child4">4</div>
+      <div class="item child5">5</div>
+    </div>
+    <h2>align-item flex-start=default</h2>
+    <div class="main" style="align-items: flex-start">
+      <div class="item child1">1</div>
+      <div class="item child2">2</div>
+      <div class="item child3">3</div>
+      <div class="item child4">4</div>
+      <div class="item child5">5</div>
+    </div>
+    <h2>align-item flex-end</h2>
+    <div class="main" style="align-items: flex-end">
+      <div class="item child1">1</div>
+      <div class="item child2">2</div>
+      <div class="item child3">3</div>
+      <div class="item child4">4</div>
+      <div class="item child5">5</div>
+    </div>
+    <!--baseline-->
+    <h2>align-item baseline</h2>
+    <div class="main" style="align-items: baseline">
+      <!--=ממרכז לפי פיבוט-->
+      <!--pivot=ציר-->
+      <!--Balancing on a Pivot with Flexbox-->
+      <div class="item child1">1</div>
+      <div class="item child2">2</div>
+      <div class="item child3">3</div>
+      <div class="item child4">4</div>
+      <div class="item child5">5</div>
+    </div>
+  </body>
+</html>

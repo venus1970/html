@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <script>
+            
+            function Hola(){              
+            var getName = prompt("Enter your first name:")
+            var firstName = String(getName);
+            console.log(firstName);
+            }
+
+            function Hola2(){
+            var getName = prompt("Enter your first name:")
+            var firstName = String(getName);
+            var getName2 = prompt("Enter your last name:")
+            var lastName = String(getName2);
+            console.log("Hola" + " " + firstName + " " + lastName);
+            }
+
+            function Hola3(){
+            var getName = prompt("Enter your first name:")
+            var firstName = String(getName);
+            var getName2 = prompt("Enter your last name:")
+            var lastName = String(getName2);
+            console.log("Hola" + " " + firstName + " " + lastName + " " + "You are welcome!");
+            }
+
+            function number(){
+            var enterFirstNum = prompt("Enter first number:");
+            var firstNum = Number(enterFirstNum);
+            var enterSecondNum = prompt("Enter Second number:");
+            var secondNum = Number(enterSecondNum);
+            console.log(firstNum + secondNum);
+            }
+
+            function prices(){
+            var enterFirstPrice = prompt("Enter first Price:");
+            var firstPrice = Number(enterFirstPrice);
+            var enterSecondPrice = prompt("Enter Second Price:");
+            var secondPrice = Number(enterSecondPrice);
+            var enterThirdPrice = prompt("Enter Third Price:");
+            var thirdPrice = Number(enterThirdPrice);
+            console.log(firstPrice + secondPrice + thirdPrice);
+            }
+
+        </script>
+
+      <button onclick="Hola()">Click Me 1</button>       <!--EX-1-->
+      <button onclick="Hola2()">Click Me 2</button>      <!--EX-2-->
+      <button onclick="Hola3()">Click Me 3</button>      <!--EX-3-->
+      <button onclick="number()">Click Me 4</button>     <!--EX-4-->
+      <button onclick="prices()">Click Me 5</button>     <!--EX-5-->
+
+    </body>
+</html>

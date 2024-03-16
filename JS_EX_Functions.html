@@ -1,0 +1,114 @@
+<html>
+
+    <head>
+
+    </head>
+
+    <body> 
+        <script>
+            //EX1 
+            function sayHola()
+            {
+                var firstName = prompt("what is your name?");
+                alert("שלום" + " " + firstName);
+            }
+            //EX2
+            function hola()
+            {
+                var firstName = prompt("what is your first name?");
+                var lastName = prompt("what is your last name?");
+                alert("Hola" + " " + firstName + " " + lastName);
+            }
+            //EX3
+            function welcome()
+            {
+                var firstName = prompt("what is your first name?");
+                var lastName = prompt("what is your last name?");
+                alert("Hola" + " " + firstName + " " + lastName + "you are welcome");
+            }
+            //EX4
+            function plus()
+            {
+                var firstNumber = prompt("enter first number");
+                var secondNumber = prompt("enter second number");
+                alert(Number(firstNumber) + Number(secondNumber));
+            }
+            //EX5
+            function plusPlus()
+            {
+                var firstPrice = prompt("enter first price");
+                var secondPrice = prompt("enter second price");
+                var thirdPrice = prompt("enter third price");
+                alert(Number(firstPrice) + Number(secondPrice) + Number(thirdPrice));
+            }
+            //EX6
+            function market()
+            {
+                var price1 = prompt("Enter first product's price");
+                var price2 = prompt("Enter second product's price");
+                var price3 = prompt("Enter third product's price");
+                alert(Number(price1) + Number(price2) + Number(price3) + 20);
+            }
+            //EX7
+            function superMarket()
+            {
+                var price1 = prompt("Enter first product's price");
+                var price2 = prompt("Enter second product's price");
+                var price3 = prompt("Enter third product's price");
+                var discount = prompt("Enter the discount amount");
+                var totalPrice = Number(price1) + Number(price2) + Number(price3) - Number(discount);
+                alert(totalPrice);
+            }
+            //EX8 
+            function isBig()
+            {
+                var x = prompt("Type first number");
+                var y = prompt("Type second number");
+                var isitBig = x > y;
+                alert(isitBig);
+            }
+            //EX9
+            function isBigger()   
+            {
+                var x = prompt("Type first number");
+                var y = prompt("Type second number");
+                var z = prompt("Type third number");
+                var isitBigger = x > y || x > z;
+                alert(isitBigger);
+            }
+            //EX10
+            function isBiggest()    
+            {
+                var x = prompt("Type first number");
+                var y = prompt("Type second number");
+                var z = prompt("Type third number");
+                var isitBiggest = x > y && x > z;
+                alert(isitBiggest);
+            }
+        </script>
+        
+        <button onclick="sayHola()">Say Hola</button> <!--EX1-->
+        <br>
+        <button onclick="hola()">Hola</button> <!--EX2-->
+        <br>
+        <button onclick="welcome()">welcome</button> <!--EX3-->
+        <br>
+        <button onclick="plus()">plus</button> <!--EX4-->
+        <br>
+        <button onclick="plusPlus()">plusPlus</button> <!--EX5-->
+        <br>
+        <button onclick="market()">market</button> <!--EX6-->
+        <br>
+        <button onclick="superMarket()">superMarket</button> <!--EX7-->
+        <br>
+        <button onclick="isBig()">isBig</button> <!--EX8-->
+        <br>
+        <button onclick="isBigger()">isBigger</button> <!--EX9-->
+        <br>
+        <button onclick="isBiggest()">isBiggest</button> <!--EX10-->
+        <br>
+
+    </body>
+
+
+</html>

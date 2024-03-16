@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css styling</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: 400;
+        font-family: "Niconne", cursive;
+        color: #4949eb;
+        text-shadow: 2px 2px 0px #957dad, 4px 4px 0px #ee4b2b,
+          6px 6px 0px #00c2cb, 8px 8px 0px #ff7f50, 10px 10px 0px #553c9a;
+      }
+      h2 {
+        color: red;
+      }
+      h3 {
+        color: darkgreen;
+      }
+      hr.gradient {
+        height: 3px;
+        border: none;
+        border-radius: 6px;
+        background: linear-gradient(
+          90deg,
+          rgba(13, 8, 96, 1) 0%,
+          rgba(9, 9, 121, 1) 21%,
+          rgba(6, 84, 170, 1) 51%,
+          rgba(0, 255, 113, 1) 100%
+        );
+      }
+      p {
+        color: blue;
+        background-color: yellow;
+        text-align: center;
+        font-size: 20;
+        font-family: Verdana;
+        font-weight: 600;
+      }
+      .greenParagraph {
+        color: rgb(3, 199, 3);
+      }
+      .blueHeading {
+        color: blue;
+      }
+    </style>
+    <!--if i want color all paragraph in blue at once-->
+  </head>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        color: blue;
+        background-color: pink;
+        border-style: dashed;
+      "
+    >
+      CSS styles with Nadav Galili
+    </h1>
+
+    Coloring in blue color all paragraphs using CSS instead of coloring each
+    paragraph separately:
+    <h2>Paragraph 1</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sunt
+      molestias consequuntur eum. Deleniti fuga dolorum laudantium amet officia
+      numquam non, maiores cupiditate eligendi facere illum odit blanditiis hic
+      aspernatur dignissimos pariatur labore consequatur ullam molestiae
+      repellendus dolore? Quisquam numquam molestias consectetur soluta dolorem,
+      enim, nam nisi molestiae, ratione perferendis exercitationem at cupiditate
+      culpa maiores aut modi ipsa provident perspiciatis! Voluptate omnis odit
+      commodi deleniti dicta, tempore corrupti quia et numquam labore doloribus
+      provident libero reiciendis repudiandae nesciunt quasi, accusamus at nam
+      eum cupiditate nihil iure quaerat maiores. Consectetur fugit error quis
+      accusantium voluptatum repellendus explicabo amet temporibus est deleniti.
+    </p>
+    <h2>Paragraph 2</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+      voluptatibus totam mollitia alias error delectus magni quis unde eaque
+      deleniti natus asperiores optio ipsa saepe, dicta iure culpa cum
+      laboriosam libero minima perspiciatis quasi molestias quos. Sequi eius
+      soluta possimus, animi voluptas odio tempore distinctio rem cum quae
+      impedit officiis! Quo in facilis corrupti autem provident, voluptatem ad,
+      ratione fugiat, perspiciatis doloribus itaque magni. Facilis ratione nam
+      illum cupiditate molestias reiciendis qui modi necessitatibus porro fuga
+      maxime, minima error eum quas eveniet debitis eos consequatur veritatis
+      pariatur deserunt? Velit ipsum debitis corrupti. Eum nobis id voluptate
+      aperiam, quae voluptas velit?
+    </p>
+    <h2>Paragraph 3</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae,
+      amet id! Non corporis voluptate est placeat saepe nobis possimus
+      aspernatur blanditiis, voluptas eius officiis accusantium labore velit
+      nulla, asperiores tempora eligendi autem quod eos maiores esse amet
+      quibusdam similique earum. Dicta quasi fuga perspiciatis enim? Culpa
+      placeat perferendis optio ipsam, dicta ea doloribus deleniti, nulla quos
+      iste beatae perspiciatis, incidunt impedit reprehenderit explicabo quia
+      eveniet asperiores numquam nobis nostrum et voluptas dignissimos.
+      Excepturi, tenetur ea? Architecto temporibus earum at blanditiis
+      repudiandae nobis rerum mollitia dolor inventore? Quae autem a excepturi
+      ducimus. Quis sed aperiam beatae ipsa. Quas consequatur exercitationem
+      natus.
+    </p>
+    Distinguish and coloring just one heading and one paragraph separatly using
+    CSS:
+
+    <h2 class="blueHeading">Paragraph 4</h2>
+    <p class="greenParagraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores,
+      quibusdam aut debitis aperiam, saepe commodi quos ducimus dicta cum nulla
+      quis accusantium, exercitationem et quod rerum soluta. Illum corrupti
+      omnis labore et consectetur. Quibusdam, totam commodi cupiditate molestiae
+      itaque expedita magnam neque placeat iste aliquid provident nam laudantium
+      id obcaecati necessitatibus ipsa aperiam odio eaque at temporibus rerum
+      sed consectetur molestias. Eaque aliquid quas rerum nam minus at atque
+      molestias soluta ipsum cumque. Amet nisi incidunt nesciunt consectetur
+      voluptates nam, quo maiores sit molestiae. Corrupti earum nobis enim,
+      soluta dolores debitis maiores vitae facere aperiam, aspernatur itaque
+      sequi dolore?
+    </p>
+    <div class="greenParagraph">bla bla bla</div>
+    <div>second bla bla bla</div>
+    <h3></h3>
+  </body>
+</html>

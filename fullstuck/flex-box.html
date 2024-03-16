@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-box</title>
+    <style>
+      /*
+    רוב ההגדרות אנחנו נשים על קונטיינר ראשי/אבא  - על מנת לשלוט על הילדים שלו הקוביות האדומות*/
+      .main1 {
+        width: 1024px;
+        height: 200px;
+        background-color: silver;
+      }
+
+      .item1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+      }
+      .main2 {
+        width: 1024px;
+        height: 200px;
+        background-color: silver;
+        display: flex; /*display: flex means arrange items in a row*//*flex-box responsible for x axis*/
+      }
+
+      .item2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+      }
+      #demo2 {
+        margin-top: 350px;
+      }
+       .main3 {
+        width: 1024px;
+       /*כאן ביטלנו גובה*/
+        background-color: silver;
+        display: flex; /*display: flex means arrange items in a row*/
+      }
+
+      .item3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+      } .main4 {
+        width: 1024px;
+       /*כאן ביטלנו גובה*/
+        background-color: silver;
+        display: flex; /*display: flex means arrange items in a row*/
+      }
+
+      .item4 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+      } .main5 {
+        width: 1024px;
+       /*כאן ביטלנו גובה*/
+        background-color: silver;
+        display: flex; /*display: flex means arrange items in a row*/
+      }
+
+      .item5 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+      } .main6 {
+        width: 1024px;
+       /*כאן ביטלנו גובה*/
+        background-color: silver;
+        display: flex; /*display: flex means arrange items in a row*/
+      }
+
+      .item6 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+      }.main7 {
+        width: 1024px;
+       /*כאן ביטלנו גובה*/
+        background-color: silver;
+        display: flex; /*display: flex means arrange items in a row*/
+      }
+
+      .item7 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-box basic/flex-box responsible for x axis</h1>
+    <h2>demo1</h2>
+    <div class="main1">
+      <!--div.item*5-->
+
+      <div class="item1"></div>
+      <div class="item1"></div>
+      <div class="item1"></div>
+      <div class="item1"></div>
+      <div class="item1"></div>
+    </div>
+     <h2 id="demo2">demo2</h2>
+    <div class="main2">
+      <!--div.item2*5-->
+
+      <div class="item2"></div>
+      <div class="item2"></div>
+      <div class="item2"></div>
+      <div class="item2"></div>
+      <div class="item2"></div>
+    </div>
+    <!--justify-content accepts: flex-start, flex-end, center, space-between, space-around, space-evenly-->
+  <h2>demo3 - justify content: center</h2>
+    <div class="main3" style="justify-content: center;">
+      <!--div.item3*5-->
+
+      <div class="item3"></div>
+      <div class="item3"></div>
+      <div class="item3"></div>
+      <div class="item3"></div>
+      <div class="item3"></div>
+    </div> 
+    <h2>demo4 - justify content: space-evenly</h2><!--<מרווחים שווים-->
+    <div class="main4" style="justify-content: space-evenly;">
+      <!--div.item4*5-->
+
+      <div class="item4"></div>
+      <div class="item4"></div>
+      <div class="item4"></div>
+      <div class="item4"></div>
+      <div class="item4"></div>
+    </div> <h2>demo5 - justify content: space-around</h2>
+    <div class="main5" style="justify-content: space-around;"><!--  בקצבות המרווחים  כחצי גודל מה-item-->
+      <!--div.item5*5-->
+<div class="item5"></div>
+<div class="item5"></div>
+<div class="item5"></div>
+<div class="item5"></div>
+<div class="item5"></div>
+     
+    </div><h2>demo6 - justify content: flex-start</h2><!--ממקם את ה items בהתחלת הציר-->
+    <div class="main6" style="justify-content: flex-start;"><!--  בקצבות המרווחים  כחצי גודל מה-item-->
+      <!--div.item6*5-->
+      <div class="item6"></div>
+      <div class="item6"></div>
+      <div class="item6"></div>
+      <div class="item6"></div>
+      <div class="item6"></div>
+
+    </div><h2>demo7 - justify content: flex-end</h2><!--ממקם את ה items בסוף הציר-->
+    <div class="main7" style="justify-content: flex-end;"><!--  בקצבות המרווחים  כחצי גודל מה-item-->
+      <!--div.item7*5-->
+      <div class="item7"></div>
+      <div class="item7"></div>
+      <div class="item7"></div>
+      <div class="item7"></div>
+      <div class="item7"></div>
+    
+
+    </div>
+    </html></body>
+</html>
+<!--מודול של פלקסבוקס זהבעצם 2 קופסאות - אחד מהם הוא פלקס קונטיינר שאנחנו מגדירים כ-display flex/ והשני זה flee items -  הילדים הישירים שלו של אבא ה-flexcontainer שלנו-->
+<!--the role of flexcontainer is to arrange the items in a row or column-->
+<!--תפקיד של פלקסקונטיינר הוא לקבץ את הילדים שלו - flexitems ולמקם אותם בציר x/y-->

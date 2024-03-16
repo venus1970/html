@@ -1,0 +1,92 @@
+<html>
+<head> 
+ <title> yaron yun porject</title>
+ 
+</head>
+<body style="background-color: gray;">
+    <h1 style="color:blue; text-align: center;"> about myself</h1>
+    <script>
+
+        //ex1
+         function taken()  {
+         var number = prompt("place a number");
+          number=Number(number)
+          if (number <= 100){
+           alert("small");   
+          } else if (number => 101 && number<= 1000){
+              alert("medium");
+          }else if (number > 1000){
+              alert("large");
+          }
+         }
+         //ex2
+         function firstname() {
+          var firstName =prompt ("first name");
+          var lastName=prompt("last name");
+           alert("hello"+" "+firstName+" "+lastName);
+         }
+          //ex3
+          function pass() {
+              var pass=prompt("place your password");
+              if (pass == "hackeru123456"){
+                  alert("login was successful");
+              }else{
+                  alert("not welcome");
+              }
+          }
+         
+          //ex4
+          function myage() {
+              var age=prompt("enter your age");
+              age=Number
+              if(age>16){
+               alert("you are not allowed to enter");
+              } else if (age=16 && age=17 && age=18){
+                  alert("you allowed to enter with parntes");
+              }else if (age>18){
+                  alert("you wellcome to enter");
+              }
+          }
+         
+          //ex5
+          function operar() {
+           var number1=number(prompt("please ente your first number"));
+           var number1=number(prompt("please ente your second number"));
+           var number1=number(prompt("please ente your third number"));
+           var operator=prompt("plase enter your operator (+) or (-)");
+           var result;
+           if (operator== "+"){
+              result=number1+number2+number3;
+          }else if (operator=="-"){
+              result=number1-number2-number3;
+          }else{
+              result="invalid";
+              alert("result"+" "+ result);
+          }
+          }
+       </script>
+    <p>
+        ירון יונייב
+       <br>
+        מספר טלפון:0534290381
+        <br>
+        הדבר הכי מורכב היה האופרטורים
+        <br>
+        נהנתי מאוד מהפונקציות
+       <br>       
+        אני חושב שהתחום מתאים לי בגלל שאני מתחבר לעבודה המורכבת ועל התוצאות שבסוף
+        <br>
+        המיון היה נורא מעניין ומעשיר
+    </p>
+    <br>
+    <button onclick="taken()"   style="color: brown;"> number</button>
+    <br>
+    <button onclick="firstname()"  style="color: red;">first name</button>
+    <br>
+    <button onclick="pass()" style="color: purple;"> pass</button>
+    <br>
+    <button onclick="myage()"  style="color: orange;"> age</button>
+    <br>
+    <button onclick="operar()"  style="color: green;"> operator</button>
+</body>
+</html>

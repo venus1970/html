@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-wrap</title>
+
+    <style>
+      .main {
+        display: flex;
+        width: 100%;
+        height: 900px;
+        background-color: silver;
+        gap: 5px;
+        flex-wrap: wrap;
+        align-content: flex-start; /* additional variants of align-content: align-content: flex-end;align-content: center;align-content: space-between;align-content: space-around;*/
+        /*משמעות של wrap -אם אין מקום בשורה הוא שובר לשורה חדשה*/
+        /*אם אני רוצה שהוא ישבר אחד מתחת לשני אני משתמש ב-align-content*/
+      }
+      .main div {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+      }
+      .main1 {
+        display: flex;
+        width: 100%;
+        height: 900px;
+        background-color: silver;
+        gap: 5px;
+        flex-wrap: nowrap; /*by default*/
+      }
+      .main1 div {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-wrap</h1>
+    <!--flex-wrap allows us to wrap the flex items into a new line if is not enough space to fit all the items in the same line-->
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <br /><br />
+    <h2>nowrap (by default)</h2>
+    <div class="main1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <br /><br />
+    </div>
+  </body>
+</html>

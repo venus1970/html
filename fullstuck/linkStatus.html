@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link status</title>
+    <!--link status style-->
+    <style>
+      /*Normal link behavior-התנהגות של לינק רגיל*/
+      #myLink {
+        text-decoration: none;
+      }
+      /*unvisited link*/
+      #myLink1 {
+        color: blueviolet;
+      }
+      /*clicked visited link*/
+      #myLink2:visited {
+        color: blue;
+      }
+      /*mouse hover link*/
+      #myLink3:hover {
+        color: aqua;
+      }
+      /*active link*/
+      #myLink4:active {
+        color: red;
+      }
+      /*הגדרה של ריווח פנימי מכל הכיוונים*/
+      .test {
+        padding: 20px;
+      } /*20px padding from all directions*/
+      /*הגדרה של רוייוח חיצוני מכול הכיוונים*/
+      .test1 {
+        margin: 20px;
+        border-radius: 100px;
+      }
+      /*padding or margin on clock direction:
+      .test{
+        padding/margin: 20px; 1 value/מקבל ריווח מכל הכיווים את אותו הערך/
+      }
+      .test{
+        padding/margin: 20px;50px;30;40px; 4 values/*top right bottom left/
+      }
+       .test{
+        padding/margin: 20px;30;40px; 3 values/right+left=30px; top=20px; bottom=40px/
+       }
+       .test{
+        paddong/margin: 20px;40px; 2 values/ top+bottom=20px; left+right=40px/
+       }
+
+
+        */
+      /*link status component*/
+    </style>
+  </head>
+  <body>
+    <h1>html link status</h1>
+    <hr style="color: red" />
+    <h2>Link status</h2>
+
+    <a id="myLink" href="https://www.google.com" target="_blank"
+      >Link 1 to Google</a
+    >
+    <br />
+    <a id="myLink1" href="https://www.google.com" target="_blank"
+      >Link 2 to Google</a
+    >
+    <br />
+    <a id="myLink2" href="https://www.google.com" target="_blank"
+      >Link 3 to Google</a
+    >
+    <br />
+    <a id="myLink3" href="https://www.google.com" target="_blank"
+      >Link 4 to Google</a
+    >
+    <br />
+    <a id="myLink4" href="https://www.google.com" target="_blank"
+      >Link 5 to Google</a
+    >
+    <br />
+    <a id="myLink5" href="https://www.google.com" target="_blank"
+      >Link 6 to Google</a
+    >
+    <br />
+    <!--a#myLink*5 TAB-->
+    <!--#=give-->
+    <a href="" id="myLink"></a>
+    <a href="" id="myLink"></a>
+    <a href="" id="myLink"></a>
+    <a href="" id="myLink"></a>
+    <a href="" id="myLink"> </a>
+    <hr />
+    <h3>להזיז קובייה כחולה ימינה - margin-left: 100px</h3>
+    <div style="background-color: red; height: 100px; width: 100px"></div>
+    <div
+      style="
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        margin-left: 100px;
+      "
+    >
+      <!--margin-left: 100px; -for move blue box right-->
+    </div>
+    <hr />
+    <h3>padding - ריווח פנימי מכל הצדדים</h3>
+    <div
+      class="test"
+      style="background-color: red; height: 100px; width: 100px"
+    >
+      <h2>Hello class</h2>
+    </div>
+    <div
+      style="
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        margin-left: 100px;
+      "
+    ></div>
+    <hr />
+    <h3>margin - ריווח חיצוני מכל הצדדים</h3>
+    <div
+      class="test1"
+      style="background-color: red; height: 100px; width: 100px"
+    >
+      <h2>Hello class</h2>
+    </div>
+    <div
+      style="
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px 50px 100px 100px;
+        margin-left: 100px;
+      "
+    ></div>
+    <div
+      style="
+        background-color: yellow;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px 100px 100px 50px;
+        margin-left: 100px;
+        margin-top: 20px;
+      "
+    >
+      <!--border radius direction: left>right>right>left-->
+    </div>
+    <hr />
+  </body>
+</html>

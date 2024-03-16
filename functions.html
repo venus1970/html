@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS input</title>
+  </head>
+  <body>
+    <h1 style="background-color: deeppink">JS input</h1>
+    <hr />
+    <script>
+      console.log("********** JS Functions **********");
+
+      //Ex-1
+      function sayOla() {
+        var firstName = prompt("what is your name?");
+        alert("Hello" + " " + firstName);
+      }
+
+      //Ex-2
+      function hola() {
+        var firstName = prompt("What is your first name?");
+        var lastName = prompt("What is your last name?");
+        alert("Hola" + " " + firstName + " " + lastName);
+      }
+
+      //Ex-3
+      function welcome() {
+        var firstName = prompt("What is your first name?");
+        var lastName = prompt("What is your larst name?");
+        alert("Hola" + " " + firstName + " " + lastName + "you are welcome!");
+      }
+
+      //Ex-4
+      function plus() {
+        var num1 = prompt("Enetr number 1");
+        var num2 = prompt("Enetr number 2");
+        alert(Number(num1) + Number(num2));
+      }
+
+      //Ex-5
+      function plesPlus() {
+        var productOne = prompt("Enetr price for product 1");
+        var productTwo = prompt("Enetr price for product 2");
+        var productThree = prompt("Enetr price for product 3");
+        alert(Number(productOne) + Number(productTwo) + Number(productThree));
+      }
+
+      //Ex-6
+      function market() {
+        var price1 = prompt("Enter price 1");
+        var price2 = prompt("Enter price 2");
+        var price3 = prompt("Enter price 3");
+        var shipping = 20;
+        alert(Number(price1) + Number(price2) + Number(price3) + shipping);
+      }
+      //Ex-7
+      function superMarke() {
+        var x = prompt("Enter price for product 1");
+        var y = prompt("Enter price for product 2");
+        var z = prompt("Enter price for product 3");
+        var discount = prompt("What is the discount for a customer?");
+        alert(Number(x) + Number(y) + Number(z) - discount);
+      }
+
+      //Ex-8
+      function isBig() {
+        var num1 = prompt("Enter number 1");
+        var num2 = prompt("Enter number 2");
+        alert(Number(num1) > Number(num2));
+      }
+
+      //Ex-9
+      function isBigger() {
+        var num1 = prompt("Enetr number 1");
+        var num2 = prompt("Enetr number 2");
+        var num3 = prompt("Enter number 3");
+        alert(Number(num1) > Number(num2) || Number(num1) > Number(num3));
+      }
+
+      //Ex-10
+      function isBiggest() {
+        var num1 = prompt("Enetr number 1");
+        var num2 = prompt("Enetr number 2");
+        var num3 = prompt("Enter number 3");
+        alert(Number(num1) > Number(num2) && Number(num1) > Number(num3));
+      }
+    </script>
+  </body>
+</html>

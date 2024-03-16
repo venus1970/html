@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      .demo {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        display: inline-block;
+      }
+      #demo {
+        background-color: aquamarine;
+        position: relative; /*by position relative, the element is positioned relative to its normal position/ hovering like three dimensions*/
+        top: 30px;
+        left: 40px;
+      }.demo1 {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        display: inline-block;
+      }
+      #demo1 {
+        background-color: aquamarine;
+        position: absolute; /*by position absolute, the element is positioned relative to the browser window page*/
+        top: 400px;
+        left: 70px;
+      }.demo2 {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        display: inline-block;
+      }
+      #demo2 {
+        background-color: aquamarine;
+        position: sticky; /*by position sticky, the element scroll with the page*/
+        top: 0px;
+        left: 70px;
+      }
+      .demo3 {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        display: inline-block;
+      }
+      #demo3 {
+        background-color: aquamarine;
+        position: fixed; /*by position fixed, the element will be fixed on the page*/
+        top: 450px;
+        left: 50px;
+      } .demo4 {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background-color: silver;
+        display: inline-block;
+      }
+      #demo4 {
+        background-color: red;
+        position: relative; /*by position relative, the element is positioned relative to its normal position/ hovering like three dimensions*/
+        bottom: 30px;
+        left: 40px;
+        z-index: -1;
+
+
+        
+      }
+      .demo5 {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background-color: silver;
+        display: inline-block;
+      }
+      #demo5{ 
+        background-color: red;
+        position: relative; /*by position relative, the element is positioned relative to its normal position/ hovering like three dimensions*/
+        top: 40px;
+        right: 40px;
+        z-index: 99;
+        }
+      #main {
+        width: 900px;
+        height: 350px;
+        background-color: silver;
+      }
+      #redbox {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+      
+      }
+      #bluebox {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+      } #main1 {
+        width: 900px;
+        height: 350px;
+        background-color: silver;
+        margin-top: 100px;
+      }
+      #redbox1 {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+         position: absolute;/*with position absolute, the element is "disconnected" and positioned relative to its parent element*/
+        top: 750px;
+        right: 300px;
+       
+      }
+      #bluebox1 {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+      }#main2 {
+        width: 900px;
+        height: 350px;
+        background-color: silver;
+        margin-top: 100px;
+        position: relative;/*אדום מרחף יחסית  בתוך הדיב יחסית לאב */
+        /*relative position behavior like static position and save on values:top, right, bottom, left (in the practic we often use relative position)*/
+      }
+      #redbox2 {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+         position: absolute;/*in absolute position, the element not save on this values and actually "disconnected" and positioned relative to its parent element*/
+        top: 200px;
+        right: 300px;
+       
+      }
+      #bluebox2 {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Position</h1>
+    <h2>position relative</h2>
+    <div class="demo"></div>
+    <!--div.demo*5 TAB-->
+    <div class="demo" id="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <br /><br /><br />
+    <h2>position absolute</h2>
+   <div class="demo1"></div>
+    <!--div.demo*5 TAB-->
+    <div class="demo" id="demo1"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <br /><br /><br /> 
+    <h2>position sticky</h2>
+    <div class="demo2"></div>
+    <!--div.demo*5 TAB-->
+    <div class="demo" id="demo2"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <br /><br /><br />
+
+ <h2>position fixed</h2>
+    <div class="demo3"></div>
+    <!--div.demo*5 TAB-->
+    <div class="demo" id="demo3"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <br /><br /><br />
+    <h2>z-index -1</h2>
+    <div class="demo4"></div>
+    <!--div.demo*5 TAB-->
+    <div class="demo" id="demo4"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <br /><br /><br />
+<h2>z-index 99</h2>
+    <div class="demo5"></div>
+    <!--div.demo*5 TAB-->
+    <div class="demo" id="demo5"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <br /><br /><br />
+
+
+
+
+
+
+    <h2>absolute</h2>
+  
+  <div id="main">
+    <h2>Hello title</h2>
+    <div id="redbox"></div>
+
+    <div id="bluebox"></div>
+  </div>
+  
+  
+  <div id="main1">
+    <div id="redbox1"></div>
+
+    <div id="bluebox1"></div>
+  </div> 
+   <div id="main2">
+    <div id="redbox2"></div>
+
+    <div id="bluebox2"></div>
+  </div> 
+  <br /><br /><br /><br><br><br><br>
+ 
+<div dir="rtl" style="font-size: 20px;">
+<h2>הערות כלליות:</h2>
+
+  <ul>
+
+    <li>
+Position absolute
+-	הוא מנטרל את הגובה ורוחב של האלמנט
+-	האלמנט מתנתק ממקומו וסוג של מרחף  - האלמנטים אחרים "לא מתייחסים אליו" – הוא לא קיים מבחינתם מבחינת המידות.
+</li>
+<li>-	ברמת העיקרון לא נשתמש ב-position absolute אלה אם באמת יש סיבה מיוחדת</li>
+<li>אם אני מגדיר לאלמנט אב של האלמנט המרחף את ה- position relative אז אני יכול לשחק עם האלמנט המרחף שלי/</li>
+<li>ב-position relative  אלמנט גם מתנתק ומרחף אבל כאן נשמרים גובה ורוחב ההתחלתיים "הם שומרים לו מקום" ביחס לאלמנטים אחרים:</li>
+<li>ואם אנחנו עובדים עם אלמנט בתוך ה- div   - האבא div צריך להיות מוגדר כ-relative והאלמנט מוגדר כ-absolute על מנת שלא "יברח"  מתוך ה-div.</li>
+<li>Relative  דומה ל-static רק מקבל 4 ערכים – top’bottom’width’height</li>
+<li>Fixed דומה ל- absolute  וגם הוא "מרחף"  וגולל איתנו לאורך כל העמוד.</li>
+<li>Sticky -הוא נעול למקום שהגדרנו ומתחיל לגלול רק כאשר מתקרבים אליו. </li>
+  </ul>
+</div>
+
+    
+  
+ <body>
+</html>
